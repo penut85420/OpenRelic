@@ -1,0 +1,12 @@
+﻿Sur	生存
+Cap	捕獲
+Def	防禦
+Int	攔截
+Spy	間諜
+Exc	挖掘
+DsSur	暗區生存
+DsDef	暗區防禦
+DsExc	暗區挖掘
+Rush	Archwing 突襲
+Purs	Archwing 追擊
+ArchInt	Archwing 攔截

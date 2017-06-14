@@ -1,0 +1,90 @@
+package main.data;
+
+import java.util.*;
+
+import main.data.dataType.*;
+import main.library.*;
+
+public class RelicDataIO {
+	final static String Spliter = "\r\n\r\n";
+	final static String VaultedRelicPath = "data\\VaultedRelics.txt";
+	final static String AllRelicPath = "data\\VoidRelic.txt";
+	final static String ItemSetPath = "data\\ItemSet.txt";
+	HashMap<String, HashMap<String, Boolean>> mVaultedRelics;
+	HashMap<String, HashMap<String, VoidRelic>> mRelics;
+	HashMap<String, ItemPart> mItemPart;
+	HashMap<String, ItemSet> mItemSet;
+	
+	public static void main(String[] args) {
+		new RelicDataIO();
+	}
+	
+	public RelicDataIO() {
+		mVaultedRelics = new HashMap<>();
+		mRelics = new HashMap<>();
+		mItemPart = new HashMap<>();
+		mItemSet = new HashMap<>();
+		loadVaultedRelic();
+		loadAllRelic();
+		loadItemSet();
+	}
+
+	private void loadVaultedRelic() {
+		String[] content = LibraryIO.readFile(VaultedRelicPath).split(Spliter);
+		
+		for (String s: content) {
+			String[] code = s.split("\r\n");
+			HashMap<String, Boolean> tmpHash = new HashMap<>();
+			
+			for (int i = 1; i < code.length; i++)
+				tmpHash.put(code[i], true);
+			
+			mVaultedRelics.put(code[0], tmpHash);
+		}
+	}
+	
+	private void loadAllRelic() {
+		String[] content = LibraryIO.readFile(AllRelicPath).split(Spliter);
+		
+		for (String s: content) {
+			String[] line = s.split("\r\n");
+
+			VoidRelic vr = new VoidRelic(line[0]);
+			
+			for (int i = 1; i < line.length; i++) {
+				if (mItemPart.get(line[i]) == null)
+					mItemPart.put(line[i], new ItemPart(line[i]));
+				vr.addItem(mItemPart.get(line[i]));
+			}
+			if (mRelics.get(vr.getEra()) == null)
+				mRelics.put(vr.getEra(), new HashMap<>());
+			mRelics.get(vr.getEra()).put(vr.getCode(), vr);
+		}
+	}
+	
+	private void loadItemSet() {
+		String[] item = new String[mItemPart.keySet().size()];
+		mItemPart.keySet().toArray(item);
+		Arrays.sort(item);
+		
+		String preSet = "";
+		ItemSet tmpSet = null;
+		for (String i: item) {
+			if (i.equals("FORMA бе╧о")) continue;
+			
+			String nowSet = i.substring(0, i.indexOf("PRIME") + 5);
+			if (!preSet.equals(nowSet)) {
+				tmpSet = new ItemSet(nowSet);
+				mItemSet.put(nowSet, tmpSet);
+				preSet = nowSet;
+			}
+			if (mItemPart.get(i) == null)
+				log("Not found: " + i);
+			tmpSet.addItem(mItemPart.get(i));
+		}
+	}
+	
+	public void log(Object obj) {
+		System.out.println(obj.toString());
+	}
+}

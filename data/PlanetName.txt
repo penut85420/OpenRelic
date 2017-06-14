@@ -1,0 +1,18 @@
+﻿水星	Mercury
+金星	Venus
+地球	Earth
+火星	Mars
+火衛一	PHOBOS
+榖神星	CERES
+木星	Jupiter
+歐羅巴	EUROPA
+土星	Saturn
+天王星	Uranus
+海王星	Neptune
+冥王星	Pluto
+鬩神星	ERIS
+賽德娜	SEDNA
+KUVA要塞	KUVA FORTRESS	
+月球	LUA
+遺棄的 OROKIN 飛船	DERELICT
+虛空	VOID
