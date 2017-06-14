@@ -20,6 +20,18 @@ public class VoidRelic {
 	
 	public String getEra() { return mEra; }
 	public String getCode() { return mCode; }
+	public String getFullName() { return mEra + " " + mCode; }
+	public ArrayList<ItemPart> getDropItemList() { return mDropItemList; }
+	
+	public String getRarity(ItemPart item) {
+		for (int i = 0; i < mDropItemList.size(); i++) {
+			if (mDropItemList.get(i).equals(item))
+				if (i < 3) return "銅";
+				else if (i < 5) return "銀";
+				else return "金";
+		}
+		return null;
+	}
 	
 	public String toString() {
 		String str = String.format("Era: %s, Code: %s\n", mEra, mCode);

@@ -10,10 +10,10 @@ public class RelicDataIO {
 	final static String VaultedRelicPath = "data\\VaultedRelics.txt";
 	final static String AllRelicPath = "data\\VoidRelic.txt";
 	final static String ItemSetPath = "data\\ItemSet.txt";
-	HashMap<String, HashMap<String, Boolean>> mVaultedRelics;
-	HashMap<String, HashMap<String, VoidRelic>> mRelics;
-	HashMap<String, ItemPart> mItemPart;
-	HashMap<String, ItemSet> mItemSet;
+	public static HashMap<String, HashMap<String, Boolean>> mVaultedRelics;
+	public static HashMap<String, HashMap<String, VoidRelic>> mRelics;
+	public static HashMap<String, ItemPart> mItemPart;
+	public static HashMap<String, ItemSet> mItemSet;
 	
 	public static void main(String[] args) {
 		new RelicDataIO();
@@ -70,7 +70,7 @@ public class RelicDataIO {
 		String preSet = "";
 		ItemSet tmpSet = null;
 		for (String i: item) {
-			if (i.equals("FORMA бе╧о")) continue;
+			if (i.equals("FORMA О©╫е╧О©╫")) continue;
 			
 			String nowSet = i.substring(0, i.indexOf("PRIME") + 5);
 			if (!preSet.equals(nowSet)) {
