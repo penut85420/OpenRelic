@@ -5,7 +5,7 @@ import java.util.*;
 import main.data.dataType.*;
 import main.library.*;
 
-public class RelicDataIO {
+public class RelicData {
 	final static String Spliter = "\r\n\r\n";
 	final static String VaultedRelicPath = "data\\VaultedRelics.txt";
 	final static String AllRelicPath = "data\\VoidRelic.txt";
@@ -15,11 +15,7 @@ public class RelicDataIO {
 	public static HashMap<String, ItemPart> mItemPart;
 	public static HashMap<String, ItemSet> mItemSet;
 	
-	public static void main(String[] args) {
-		new RelicDataIO();
-	}
-	
-	public RelicDataIO() {
+	public static void init() {
 		mVaultedRelics = new HashMap<>();
 		mRelics = new HashMap<>();
 		mItemPart = new HashMap<>();
@@ -29,7 +25,7 @@ public class RelicDataIO {
 		loadItemSet();
 	}
 
-	private void loadVaultedRelic() {
+	private static void loadVaultedRelic() {
 		String[] content = LibraryIO.readFile(VaultedRelicPath).split(Spliter);
 		
 		for (String s: content) {
@@ -43,7 +39,7 @@ public class RelicDataIO {
 		}
 	}
 	
-	private void loadAllRelic() {
+	private static void loadAllRelic() {
 		String[] content = LibraryIO.readFile(AllRelicPath).split(Spliter);
 		
 		for (String s: content) {
@@ -62,7 +58,7 @@ public class RelicDataIO {
 		}
 	}
 	
-	private void loadItemSet() {
+	private static void loadItemSet() {
 		String[] item = new String[mItemPart.keySet().size()];
 		mItemPart.keySet().toArray(item);
 		Arrays.sort(item);
@@ -84,7 +80,7 @@ public class RelicDataIO {
 		}
 	}
 	
-	public void log(Object obj) {
+	public static void log(Object obj) {
 		System.out.println(obj.toString());
 	}
 }

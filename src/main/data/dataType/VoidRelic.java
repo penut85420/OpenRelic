@@ -2,6 +2,8 @@ package main.data.dataType;
 
 import java.util.ArrayList;
 
+import main.data.Lang;
+
 public class VoidRelic {
 	String mEra;
 	String mCode;
@@ -18,17 +20,17 @@ public class VoidRelic {
 		mDropItemList.add(item);
 	}
 	
-	public String getEra() { return mEra; }
+	public String getEra() { return t(mEra); }
 	public String getCode() { return mCode; }
-	public String getFullName() { return mEra + " " + mCode; }
+	public String getFullName() { return getEra() + " " + getCode(); }
 	public ArrayList<ItemPart> getDropItemList() { return mDropItemList; }
 	
 	public String getRarity(ItemPart item) {
 		for (int i = 0; i < mDropItemList.size(); i++) {
 			if (mDropItemList.get(i).equals(item))
-				if (i < 3) return "銅";
-				else if (i < 5) return "銀";
-				else return "金";
+				if (i < 3) return t("common");
+				else if (i < 5) return t("uncommon");
+				else return t("rare");
 		}
 		return null;
 	}
@@ -38,5 +40,9 @@ public class VoidRelic {
 		for (ItemPart item: mDropItemList)
 			str += item.toString() + "\n";
 		return str;
+	}
+	
+	private String t(String key) {
+		return Lang.t(key);
 	}
 }

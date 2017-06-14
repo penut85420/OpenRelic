@@ -1,4 +1,4 @@
-﻿古紀	K1
+﻿Lith	K1
 ODONATA PRIME 外甲 藍圖
 伯斯頓 PRIME 槍托
 狼牙 PRIME 藍圖
@@ -6,7 +6,7 @@ TRINITY PRIME 藍圖
 猛虎 PRIME 槍管
 喀婆薩 PRIME 項圈扣
 
-古紀	S4
+Lith	S4
 FORMA 藍圖
 帕里斯 PRIME 藍圖
 雷克斯 PRIME 藍圖
@@ -14,7 +14,7 @@ TRINITY PRIME 機體 藍圖
 喀婆薩 PRIME 庫狛項圈 藍圖
 SARYN PRIME 藍圖
 
-古紀	S5
+Lith	S5
 伯斯頓 PRIME 槍機
 搬運者 PRIME 外殼
 狼牙 PRIME 刀刃
@@ -22,7 +22,7 @@ SARYN PRIME 藍圖
 野馬雙槍 PRIME 連結器
 旋刃飛刀 PRIME 刀刃
 
-古紀	V1
+Lith	V1
 伯斯頓 PRIME 槍托
 帕里斯 PRIME 上弓臂
 帕里斯 PRIME 下弓臂
@@ -30,7 +30,7 @@ FORMA 藍圖
 VOLT PRIME 系統 藍圖
 重擊巨錘 PRIME 握柄
 
-古紀	V2
+Lith	V2
 帕里斯 PRIME 下弓臂
 狼牙 PRIME 藍圖
 雷克斯 PRIME 槍管
@@ -38,7 +38,7 @@ FORMA 藍圖
 帕里斯 PRIME 上弓臂
 VAUBAN PRIME 系統 藍圖
 
-前紀	C2
+Meso	C2
 西諾斯 PRIME 上弓臂
 迦倫提恩 PRIME 刀刃
 野馬 PRIME 藍圖
@@ -46,7 +46,7 @@ VALKYR PRIME 頭部神經光元 藍圖
 ODONATA PRIME 藍圖
 搬運者 PRIME 頭部
 
-前紀	D1
+Meso	D1
 FORMA 藍圖
 歐特魯斯 PRIME 握柄
 雷克斯 PRIME 藍圖
@@ -54,7 +54,7 @@ FORMA 藍圖
 歐特魯斯 PRIME 刀刃
 雙短柄戰鐮 PRIME 刀刃
 
-前紀	F1
+Meso	F1
 SARYN PRIME 系統 藍圖
 帕里斯 PRIME 下弓臂
 野馬 PRIME 槍機
@@ -62,7 +62,7 @@ NEKROS PRIME 頭部神經光元 藍圖
 雙短柄戰鐮 PRIME 握柄
 重擊巨錘 PRIME 藍圖
 
-前紀	S2
+Meso	S2
 帕里斯 PRIME 弓弦
 迦倫提恩 PRIME 刀刃
 野馬 PRIME 藍圖
@@ -70,7 +70,7 @@ FORMA 藍圖
 帕里斯 PRIME 弓身
 SARYN PRIME 機體 藍圖
 
-前紀	S3
+Meso	S3
 NEKROS PRIME 機體 藍圖
 VALKYR PRIME 藍圖
 野馬雙槍 PRIME 藍圖
@@ -78,7 +78,7 @@ ASH PRIME 藍圖
 FORMA 藍圖
 旋刃飛刀 PRIME 鏢袋
 
-前紀	V1
+Meso	V1
 伯斯頓 PRIME 藍圖
 搬運者 PRIME 藍圖
 旋刃飛刀 PRIME 藍圖
@@ -86,7 +86,7 @@ FORMA 藍圖
 布萊頓 PRIME 藍圖
 守望者 PRIME 槍機
 
-前紀	V3
+Meso	V3
 FORMA 藍圖
 搬運者 PRIME 藍圖
 旋刃飛刀 PRIME 藍圖
@@ -94,7 +94,7 @@ VOLT PRIME 機體 藍圖
 喀婆薩 PRIME 項圈帶
 VALKYR PRIME 系統 藍圖
 
-中紀	A1
+Neo	A1
 FORMA 藍圖
 布萊頓 PRIME 槍管
 搬運者 PRIME 系統
@@ -102,7 +102,7 @@ FORMA 藍圖
 西諾斯 PRIME 弓弦
 史提托雙槍 PRIME 藍圖
 
-中紀	N3
+Neo	N3
 ODONATA PRIME 系統 藍圖
 帕里斯 PRIME 弓弦
 雷克斯 PRIME 槍管
@@ -110,7 +110,7 @@ ASH PRIME 頭部神經光元 藍圖
 狼牙 PRIME 握柄
 NEKROS PRIME 系統 藍圖
 
-中紀	N4
+Neo	N4
 ASH PRIME 機體 藍圖
 布萊頓 PRIME 槍托
 帕里斯 PRIME 弓弦
@@ -118,7 +118,7 @@ FORMA 藍圖
 凱旋之爪 PRIME 藍圖
 侍刃 PRIME 刀刃
 
-中紀	V2
+Neo	V2
 布萊頓 PRIME 槍托
 狼牙 PRIME 握柄
 迦倫提恩 PRIME 刀刃
@@ -126,7 +126,7 @@ FORMA 藍圖
 迦倫提恩 PRIME 握柄
 VAUBAN PRIME 藍圖
 
-中紀	V3
+Neo	V3
 帕里斯 PRIME 弓弦
 搬運者 PRIME 系統
 迦倫提恩 PRIME 刀刃
@@ -134,7 +134,7 @@ FORMA 藍圖
 猛虎 PRIME 槍機
 VAUBAN PRIME 頭部神經光元 藍圖
 
-中紀	V4
+Neo	V4
 猛虎 PRIME 槍托
 西諾斯 PRIME 弓身
 野馬 PRIME 槍機
@@ -142,7 +142,7 @@ ASH PRIME 頭部神經光元 藍圖
 SARYN PRIME 頭部神經光元 藍圖
 凱旋之爪 PRIME 手套
 
-後紀	A1
+Axi	A1
 TRINITY PRIME 系統 藍圖
 布萊頓 PRIME 槍托
 重擊巨錘 PRIME 錘頭
@@ -150,7 +150,7 @@ TRINITY PRIME 系統 藍圖
 雙短柄戰鐮 PRIME 握柄
 侍刃 PRIME 藍圖
 
-後紀	C1
+Axi	C1
 TRINITY PRIME 頭部神經光元 藍圖
 守望者 PRIME 槍管
 雷克斯 PRIME 槍機
@@ -158,7 +158,7 @@ FORMA 藍圖
 歐特魯斯 PRIME 藍圖
 西諾斯 PRIME 下弓臂
 
-後紀	G1
+Axi	G1
 NEKROS PRIME 機體 藍圖
 SARYN PRIME 系統 藍圖
 帕里斯 PRIME 藍圖
@@ -166,7 +166,7 @@ FORMA 藍圖
 喀婆薩 PRIME 庫狛項圈 藍圖
 迦倫提恩 PRIME 藍圖
 
-後紀	N1
+Axi	N1
 FORMA 藍圖
 布萊頓 PRIME 藍圖
 狼牙 PRIME 刀刃
@@ -174,7 +174,7 @@ ODONATA PRIME 機翼 藍圖
 史提托雙槍 PRIME 連接器
 ASH PRIME 系統 藍圖
 
-後紀	N2
+Axi	N2
 搬運者 PRIME 外殼
 野馬 PRIME 藍圖
 雷克斯 PRIME 槍機
@@ -182,7 +182,7 @@ ASH PRIME 頭部神經光元 藍圖
 FORMA 藍圖
 侍刃 PRIME 握柄
 
-後紀	N3
+Axi	N3
 FORMA 藍圖
 帕里斯 PRIME 上弓臂
 雙短柄戰鐮 PRIME 藍圖
@@ -190,7 +190,7 @@ VOLT PRIME 藍圖
 野馬 PRIME 槍管
 NEKROS PRIME 藍圖
 
-後紀	T1
+Axi	T1
 ODONATA PRIME 外甲 藍圖
 SARYN PRIME 系統 藍圖
 守望者 PRIME 槍管
@@ -198,7 +198,7 @@ SARYN PRIME 系統 藍圖
 史提托雙槍 PRIME 槍機
 猛虎 PRIME 藍圖
 
-後紀	V1
+Axi	V1
 ODONATA PRIME 系統 藍圖
 搬運者 PRIME 系統
 雙短柄戰鐮 PRIME 藍圖
@@ -206,7 +206,7 @@ FORMA 藍圖
 VOLT PRIME 頭部神經光元 藍圖
 VAUBAN PRIME 機體 藍圖
 
-後紀	V4
+Axi	V4
 ODONATA PRIME 外甲 藍圖
 TRINITY PRIME 系統 藍圖
 帕里斯 PRIME 藍圖
@@ -214,7 +214,7 @@ FORMA 藍圖
 西諾斯 PRIME 藍圖
 守望者 PRIME 槍托
 
-後紀	V5
+Axi	V5
 FORMA 藍圖
 凱旋之爪 PRIME 爪刃
 雙短柄戰鐮 PRIME 藍圖
@@ -222,7 +222,7 @@ FORMA 藍圖
 猛虎 PRIME 槍機
 VALKYR PRIME 機體 藍圖
 
-中紀	S5
+Neo	S5
 EMBER PRIME 頭部神經光元 藍圖
 拉特昂 PRIME 槍機
 收割者 PRIME 藍圖
@@ -230,7 +230,7 @@ FROST PRIME 系統 藍圖
 戰刃 PRIME 圓盤
 暗殺者 PRIME 槍機
 
-前紀	F2
+Meso	F2
 EMBER PRIME 機體 藍圖
 拉特昂 PRIME 槍托
 暗殺者 PRIME 槍管
@@ -238,7 +238,7 @@ FORMA 藍圖
 收割者 PRIME 刀刃
 FROST PRIME 藍圖
 
-古紀	G1
+Lith	G1
 FROST PRIME 機體 藍圖
 拉特昂 PRIME 藍圖
 收割者 PRIME 握柄
@@ -246,7 +246,7 @@ EMBER PRIME 系統 藍圖
 FORMA 藍圖
 戰刃 PRIME 藍圖
 
-後紀	E1
+Axi	E1
 FROST PRIME 頭部神經光元 藍圖
 拉特昂 PRIME 槍管
 暗殺者 PRIME 藍圖
@@ -254,7 +254,7 @@ FORMA 藍圖
 戰刃 PRIME 刀刃
 EMBER PRIME 藍圖
 
-中紀	B1
+Neo	B1
 TRINITY PRIME 系統 藍圖
 帕里斯 PRIME 弓弦
 野馬 PRIME 槍機
@@ -262,7 +262,7 @@ TRINITY PRIME 系統 藍圖
 守望者 PRIME 槍托
 BANSHEE PRIME 機體 藍圖
 
-中紀	T1
+Neo	T1
 FORMA 藍圖
 伯斯頓 PRIME 藍圖
 雙短柄戰鐮 PRIME 藍圖
@@ -270,7 +270,7 @@ BANSHEE PRIME 藍圖
 重擊巨錘 PRIME 握柄
 猛虎 PRIME 藍圖
 
-古紀	N2
+Lith	N2
 帕里斯 PRIME 上弓臂
 搬運者 PRIME 系統
 旋刃飛刀 PRIME 藍圖
@@ -278,7 +278,7 @@ BANSHEE PRIME 藍圖
 赫利俄斯 PRIME 藍圖
 NEKROS PRIME 系統 藍圖
 
-古紀	V3
+Lith	V3
 布萊頓 PRIME 藍圖
 帕里斯 PRIME 下弓臂
 西諾斯 PRIME 上弓臂
@@ -286,7 +286,7 @@ NEKROS PRIME 系統 藍圖
 赫利俄斯 PRIME 系統
 VALKYR PRIME 系統 藍圖
 
-前紀	N3
+Meso	N3
 伯斯頓 PRIME 槍托
 布萊頓 PRIME 槍管
 野馬 PRIME 藍圖
@@ -294,7 +294,7 @@ VALKYR PRIME 系統 藍圖
 搬運者 PRIME 頭部
 NEKROS PRIME 藍圖
 
-前紀	S4
+Meso	S4
 BANSHEE PRIME 頭部神經光元 藍圖
 狼牙 PRIME 藍圖
 迦倫提恩 PRIME 刀刃
@@ -302,7 +302,7 @@ TRINITY PRIME 藍圖
 狼牙 PRIME 握柄
 SARYN PRIME 藍圖
 
-前紀	V4
+Meso	V4
 FORMA 藍圖
 搬運者 PRIME 藍圖
 雷克斯 PRIME 槍管
@@ -310,7 +310,7 @@ ASH PRIME 頭部神經光元 藍圖
 VALKYR PRIME 頭部神經光元 藍圖
 VAUBAN PRIME 機體 藍圖
 
-中紀	N5
+Neo	N5
 FORMA 藍圖
 SARYN PRIME 系統 藍圖
 赫利俄斯 PRIME 外殼
@@ -318,7 +318,7 @@ ASH PRIME 系統 藍圖
 史提托雙槍 PRIME 連接器
 侍刃 PRIME 藍圖
 
-中紀	T1
+Neo	T1
 FORMA 藍圖
 伯斯頓 PRIME 藍圖
 雙短柄戰鐮 PRIME 藍圖
@@ -326,7 +326,7 @@ BANSHEE PRIME 藍圖
 重擊巨錘 PRIME 握柄
 猛虎 PRIME 藍圖
 
-後紀	B1
+Axi	B1
 ASH PRIME 機體 藍圖
 悅音 PRIME 藍圖
 狼牙 PRIME 刀刃
@@ -334,7 +334,7 @@ ASH PRIME 機體 藍圖
 西諾斯 PRIME 藍圖
 BANSHEE PRIME 系統 藍圖
 
-後紀	E2
+Axi	E2
 布萊頓 PRIME 槍托
 帕里斯 PRIME 藍圖
 雷克斯 PRIME 槍機
@@ -342,7 +342,7 @@ FORMA 藍圖
 野馬 PRIME 槍管
 悅音 PRIME 槍機
 
-後紀	H1
+Axi	H1
 FORMA 藍圖
 守望者 PRIME 槍管
 重擊巨錘 PRIME 錘頭
@@ -350,7 +350,7 @@ TRINITY PRIME 機體 藍圖
 史提托雙槍 PRIME 槍機
 赫利俄斯 PRIME 頭部
 
-古紀	A1
+Lith	A1
 FORMA 藍圖
 布萊頓 PRIME 槍管
 瓦斯托 PRIME 槍機
@@ -358,7 +358,7 @@ SARYN PRIME 頭部神經光元 藍圖
 守望者 PRIME 藍圖
 史提托雙槍 PRIME 藍圖
 
-古紀	C1
+Lith	C1
 NOVA PRIME 系統 藍圖
 NOVA PRIME 頭部神經光元 藍圖
 狼牙 PRIME 刀刃
@@ -366,7 +366,7 @@ FORMA 藍圖
 喀婆薩 PRIME 項圈帶
 搬運者 PRIME 頭部
 
-古紀	F1
+Lith	F1
 狼牙 PRIME 刀刃
 帕里斯 PRIME 藍圖
 FORMA 藍圖
@@ -374,7 +374,7 @@ ODONATA PRIME 藍圖
 分裂斬斧 PRIME 藍圖
 重擊巨錘 PRIME 藍圖
 
-中紀	B2
+Neo	B2
 布萊頓 PRIME 槍托
 狼牙 PRIME 藍圖
 猛虎 PRIME 槍托
@@ -382,7 +382,7 @@ FORMA 藍圖
 凱旋之爪 PRIME 藍圖
 BANSHEE PRIME 機體 藍圖
 
-中紀	N2
+Neo	N2
 狼牙 PRIME 藍圖
 瓦斯托 PRIME 槍管
 雷克斯 PRIME 藍圖
@@ -390,7 +390,7 @@ FORMA 藍圖
 NOVA PRIME 藍圖
 VAUBAN PRIME 系統 藍圖
 
-中紀	N6
+Neo	N6
 西諾斯 PRIME 上弓臂
 迦倫提恩 PRIME 刀刃
 野馬 PRIME 槍機
@@ -398,7 +398,7 @@ TRINITY PRIME 藍圖
 席芭莉絲 PRIME 槍機
 侍刃 PRIME 握柄
 
-中紀	N7
+Neo	N7
 TRINITY PRIME 頭部神經光元 藍圖
 凱旋之爪 PRIME 爪刃
 悅音 PRIME 藍圖
@@ -406,7 +406,7 @@ BANSHEE PRIME 藍圖
 VALKYR PRIME 頭部神經光元 藍圖
 NEKROS PRIME 系統 藍圖
 
-中紀	S1
+Neo	S1
 搬運者 PRIME 外殼
 月神 PRIME 藍圖
 雷克斯 PRIME 槍管
@@ -414,7 +414,7 @@ FORMA 藍圖
 TRINITY PRIME 機體 藍圖
 SARYN PRIME 藍圖
 
-中紀	S3
+Neo	S3
 伯斯頓 PRIME 槍機
 搬運者 PRIME 藍圖
 月神 PRIME 槍管
@@ -422,7 +422,7 @@ FORMA 藍圖
 瓦斯托 PRIME 藍圖
 旋刃飛刀 PRIME 刀刃
 
-中紀	S6
+Neo	S6
 FORMA 藍圖
 TRINITY PRIME 頭部神經光元 藍圖
 伯斯頓 PRIME 藍圖
@@ -430,7 +430,7 @@ TRINITY PRIME 頭部神經光元 藍圖
 猛虎 PRIME 槍機
 席瓦 & 神盾 PRIME 護手
 
-中紀	V5
+Neo	V5
 帕里斯 PRIME 弓弦
 席瓦 & 神盾 PRIME 握柄
 赫利俄斯 PRIME 外殼
@@ -438,7 +438,7 @@ FORMA 藍圖
 伯斯頓 PRIME 槍管
 VAUBAN PRIME 頭部神經光元 藍圖
 
-古紀	A2
+Lith	A2
 FORMA 藍圖
 VALKYR PRIME 藍圖
 雷克斯 PRIME 槍管
@@ -446,7 +446,7 @@ VALKYR PRIME 藍圖
 野馬雙槍 PRIME 連結器
 史提托雙槍 PRIME 藍圖
 
-古紀	N1
+Lith	N1
 NEKROS PRIME 機體 藍圖
 狼牙 PRIME 刀刃
 野馬 PRIME 藍圖
@@ -454,7 +454,7 @@ FORMA 藍圖
 野馬雙槍 PRIME 連結器
 NOVA PRIME 機體 藍圖
 
-古紀	N3
+Lith	N3
 VALKYR PRIME 藍圖
 伯斯頓 PRIME 槍機
 席芭莉絲 PRIME 槍托
@@ -462,7 +462,7 @@ FORMA 藍圖
 布萊頓 PRIME 藍圖
 NEKROS PRIME 藍圖
 
-古紀	S3
+Lith	S3
 帕里斯 PRIME 弓弦
 搬運者 PRIME 系統
 野馬雙槍 PRIME 藍圖
@@ -470,7 +470,7 @@ ASH PRIME 藍圖
 月神 PRIME 槍機
 旋刃飛刀 PRIME 鏢袋
 
-古紀	S6
+Lith	S6
 FORMA 藍圖
 狼牙 PRIME 刀刃
 雙短柄戰鐮 PRIME 藍圖
@@ -478,7 +478,7 @@ VALKYR PRIME 頭部神經光元 藍圖
 喀婆薩 PRIME 項圈帶
 旋刃飛刀 PRIME 鏢袋
 
-古紀	V4
+Lith	V4
 NEKROS PRIME 機體 藍圖
 凱旋之爪 PRIME 爪刃
 旋刃飛刀 PRIME 藍圖
@@ -486,7 +486,7 @@ NEKROS PRIME 機體 藍圖
 赫利俄斯 PRIME 藍圖
 VAUBAN PRIME 機體 藍圖
 
-前紀	N4
+Meso	N4
 SARYN PRIME 系統 藍圖
 帕里斯 PRIME 上弓臂
 歐特魯斯 PRIME 握柄
@@ -494,7 +494,7 @@ FORMA 藍圖
 OBERON PRIME 藍圖
 侍刃 PRIME 刀刃
 
-前紀	S5
+Meso	S5
 伯斯頓 PRIME 槍托
 布萊頓 PRIME 槍管
 雷克斯 PRIME 槍管
@@ -502,7 +502,7 @@ FORMA 藍圖
 SARYN PRIME 頭部神經光元 藍圖
 席芭莉絲 PRIME 槍管
 
-前紀	S6
+Meso	S6
 VALKYR PRIME 藍圖
 赫利俄斯 PRIME 外殼
 迦倫提恩 PRIME 刀刃
@@ -510,7 +510,7 @@ VALKYR PRIME 藍圖
 西諾斯 PRIME 弓弦
 旋刃飛刀 PRIME 刀刃
 
-前紀	V2
+Meso	V2
 ASH PRIME 機體 藍圖
 帕里斯 PRIME 藍圖
 瓦斯托 PRIME 槍機
@@ -518,7 +518,7 @@ FORMA 藍圖
 VOLT PRIME 機體 藍圖
 侍刃 PRIME 刀刃
 
-前紀	V5
+Meso	V5
 旋刃飛刀 PRIME 藍圖
 西諾斯 PRIME 弓身
 野馬 PRIME 藍圖
@@ -526,7 +526,7 @@ VOLT PRIME 機體 藍圖
 悅音 PRIME 槍管
 凱旋之爪 PRIME 手套
 
-前紀	O1
+Meso	O1
 FORMA 藍圖
 帕里斯 PRIME 下弓臂
 野馬雙槍 PRIME 藍圖
@@ -534,7 +534,7 @@ FORMA 藍圖
 西諾斯 PRIME 弓弦
 OBERON PRIME 頭部神經光元 藍圖
 
-後紀	A2
+Axi	A2
 FORMA 藍圖
 雷克斯 PRIME 槍機
 雷克斯 PRIME 槍管
@@ -542,7 +542,7 @@ FORMA 藍圖
 雷克斯雙槍 PRIME 藍圖
 雷克斯雙槍 PRIME 連接器
 
-後紀	B2
+Axi	B2
 席芭莉絲 PRIME 藍圖
 狼牙 PRIME 刀刃
 重擊巨錘 PRIME 錘頭
@@ -550,7 +550,7 @@ FORMA 藍圖
 歐特魯斯 PRIME 藍圖
 BANSHEE PRIME 系統 藍圖
 
-後紀	C2
+Axi	C2
 FORMA 藍圖
 TRINITY PRIME 系統 藍圖
 布萊頓 PRIME 藍圖
@@ -558,7 +558,7 @@ TRINITY PRIME 系統 藍圖
 重擊巨錘 PRIME 握柄
 西諾斯 PRIME 下弓臂
 
-後紀	H2
+Axi	H2
 OBERON PRIME 機體 藍圖
 狼牙 PRIME 握柄
 雷克斯 PRIME 槍機
@@ -566,7 +566,7 @@ TRINITY PRIME 機體 藍圖
 史提托雙槍 PRIME 槍管
 赫利俄斯 PRIME 頭部
 
-後紀	O1
+Axi	O1
 FORMA 藍圖
 帕里斯 PRIME 藍圖
 悅音 PRIME 藍圖
@@ -574,7 +574,7 @@ FORMA 藍圖
 迦倫提恩 PRIME 握柄
 OBERON PRIME 系統 藍圖
 
-古紀	F2
+Lith	F2
 ODONATA PRIME 系統 藍圖
 帕里斯 PRIME 上弓臂
 飛揚 PRIME 星鏢
@@ -582,7 +582,7 @@ ODONATA PRIME 系統 藍圖
 狼牙 PRIME 握柄
 VAUBAN PRIME 藍圖
 
-古紀	M1
+Lith	M1
 FORMA 藍圖
 野豬 PRIME 槍機
 雷克斯 PRIME 槍機
@@ -590,7 +590,7 @@ FORMA 藍圖
 達克拉 PRIME 藍圖
 MAG PRIME 藍圖
 
-古紀	S2
+Lith	S2
 NYX PRIME 藍圖
 搬運者 PRIME 系統
 野馬雙槍 PRIME 藍圖
@@ -598,7 +598,7 @@ FORMA 藍圖
 喀婆薩 PRIME 項圈帶
 月神 PRIME 槍托
 
-前紀	B1
+Meso	B1
 FORMA 藍圖
 歐特魯斯 PRIME 握柄
 達克拉 PRIME 握柄
@@ -606,7 +606,7 @@ MAG PRIME 機體 藍圖
 歐特魯斯 PRIME 藍圖
 野豬 PRIME 槍托
 
-前紀	C1
+Meso	C1
 FORMA 藍圖
 NOVA PRIME 頭部神經光元 藍圖
 SARYN PRIME 系統 藍圖
@@ -614,7 +614,7 @@ ASH PRIME 藍圖
 分裂斬斧 PRIME 握柄
 搬運者 PRIME 頭部
 
-前紀	N1
+Meso	N1
 布萊頓 PRIME 槍托
 狼牙 PRIME 握柄
 狼牙 PRIME 藍圖
@@ -622,7 +622,7 @@ FORMA 藍圖
 雙短柄戰鐮 PRIME 握柄
 NYX PRIME 頭部神經光元 藍圖
 
-前紀	N2
+Meso	N2
 狼牙 PRIME 握柄
 野馬 PRIME 藍圖
 飛揚 PRIME 藍圖
@@ -630,7 +630,7 @@ ASH PRIME 頭部神經光元 藍圖
 FORMA 藍圖
 VAUBAN PRIME 頭部神經光元 藍圖
 
-前紀	S1
+Meso	S1
 NOVA PRIME 系統 藍圖
 帕里斯 PRIME 藍圖
 猛虎 PRIME 槍托
@@ -638,7 +638,7 @@ NOVA PRIME 系統 藍圖
 ODONATA PRIME 藍圖
 月神 PRIME 藍圖
 
-中紀	D1
+Neo	D1
 MAG PRIME 系統 藍圖
 瓦斯托 PRIME 槍管
 野豬 PRIME 藍圖
@@ -646,7 +646,7 @@ FORMA 藍圖
 TRINITY PRIME 頭部神經光元 藍圖
 達克拉 PRIME 刀刃
 
-中紀	N1
+Neo	N1
 FORMA 藍圖
 守望者 PRIME 槍管
 飛揚 PRIME 星鏢
@@ -654,7 +654,7 @@ FORMA 藍圖
 月神 PRIME 槍機
 NYX PRIME 機體 藍圖
 
-中紀	S2
+Neo	S2
 NOVA PRIME 系統 藍圖
 伯斯頓 PRIME 槍托
 帕里斯 PRIME 下弓臂
@@ -662,7 +662,7 @@ NYX PRIME 系統 藍圖
 帕里斯 PRIME 上弓臂
 SARYN PRIME 機體 藍圖
 
-中紀	V1
+Neo	V1
 FORMA 藍圖
 NYX PRIME 藍圖
 雙短柄戰鐮 PRIME 藍圖
@@ -670,7 +670,7 @@ VOLT PRIME 藍圖
 野馬 PRIME 槍管
 NOVA PRIME 機體 藍圖
 
-後紀	S1
+Axi	S1
 FORMA 藍圖
 野馬 PRIME 槍機
 野馬 PRIME 藍圖
@@ -678,7 +678,7 @@ TRINITY PRIME 藍圖
 野馬雙槍 PRIME 連結器
 分裂斬斧 PRIME 刀刃
 
-後紀	V2
+Axi	V2
 MAG PRIME 頭部神經光元 藍圖
 TRINITY PRIME 系統 藍圖
 飛揚 PRIME 鏢袋

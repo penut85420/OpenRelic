@@ -8,15 +8,16 @@ import main.data.dataType.*;
 public class RelicViewerTableModel extends AbstractTableModel {
 	private static final long serialVersionUID = 1L;
 	
-	String[] mColsName = {"Relic", "ItemName", "Rarity"};
+	String[] mColsName = {Lang.t("relic-name"), Lang.t("item-name"), Lang.t("rarity")};
+	
 	ArrayList<String> mRelic = new ArrayList<>();
 	ArrayList<String> mItemName = new ArrayList<>();
 	ArrayList<String> mRarity = new ArrayList<>();
 	
 	public RelicViewerTableModel() {
-		for (String key: RelicDataIO.mRelics.keySet()) {
-			for (String kkey: RelicDataIO.mRelics.get(key).keySet()) {
-				VoidRelic vr = RelicDataIO.mRelics.get(key).get(kkey);
+		for (String key: RelicData.mRelics.keySet()) {
+			for (String kkey: RelicData.mRelics.get(key).keySet()) {
+				VoidRelic vr = RelicData.mRelics.get(key).get(kkey);
 				for (ItemPart item: vr.getDropItemList()) {
 					mRelic.add(vr.getFullName());
 					mItemName.add(item.getName());

@@ -1,0 +1,48 @@
+package main.data;
+
+import java.util.*;
+
+import main.library.LibraryIO;
+
+public class Lang {
+	final static String LangFolder = "data\\lang\\";
+	final static String LangPath = LangFolder + "lang.txt";
+	public static HashMap<String, HashMap<String, String>> mLang;
+	public static String Lang = "zh-TW";
+	
+	public static void init() {
+		mLang = new HashMap<>();
+		String[] langType = LibraryIO.readFile(LangPath).split("\r\n");
+		
+		for (String lang: langType) {
+			mLang.put(lang, new HashMap<>());
+			String[] langContent = LibraryIO.readFile(LangFolder + lang + ".lang").split("\r\n");
+			for (String seg: langContent) {
+				String[] segs = seg.split(": ");
+				if (segs.length < 2) continue;
+				mLang.get(lang).put(segs[0], segs[1]);
+			}
+		}
+	}
+	
+	public static String[] getLangList() {
+		String[] langList = new String[mLang.size()];
+		int i = 0;
+		for (String s: mLang.keySet())
+			langList[i++] = mLang.get(s).get("lang-name");
+			
+		return langList;
+	}
+	
+	public static void setLang(String langName) {
+		for (String s: mLang.keySet())
+			if (mLang.get(s).get("lang-name").equals(langName))
+				Lang = s;
+	}
+	
+	public static String t(String key) {
+		if (mLang.get(Lang).get(key) == null)
+			return key;
+		return mLang.get(Lang).get(key);
+	}
+}

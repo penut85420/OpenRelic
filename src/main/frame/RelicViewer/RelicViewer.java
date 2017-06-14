@@ -3,10 +3,15 @@ package main.frame.RelicViewer;
 import java.awt.*;
 import javax.swing.*;
 
-public class RelicViewer extends JPanel {
+import main.data.Lang;
+import main.frame.CtrlClass;
+
+public class RelicViewer extends JPanel implements CtrlClass {
 	private static final long serialVersionUID = 1L;
 
 	JTable mRelicTable;
+	JTextField mSearchField;
+	JButton mSearchButton;
 	
 	public RelicViewer() {
 		init();
@@ -19,7 +24,22 @@ public class RelicViewer extends JPanel {
 	
 	private void initGUI() {
 		mRelicTable = new JTable(new RelicViewerTableModel());
+		mSearchField = new JTextField();
+		mSearchButton = new JButton(Lang.t("search"));
 		
+		JPanel top = new JPanel(new GridLayout(0, 3));
+		JPanel topLeft = new JPanel(new BorderLayout());
+		topLeft.add(mSearchField, BorderLayout.CENTER);
+		topLeft.add(mSearchButton, BorderLayout.EAST);
+		top.add(topLeft);
+		
+		add(top, BorderLayout.NORTH);
 		add(new JScrollPane(mRelicTable), BorderLayout.CENTER);
+	}
+
+	@Override
+	public void refresh() {
+		mSearchButton.setText(Lang.t("search"));
+		mRelicTable.setModel(new RelicViewerTableModel());
 	}
 }
