@@ -20,6 +20,7 @@ public class MainFrame extends JFrame implements CtrlClass {
 	
 	public MainFrame() {
 		init();
+		initUIManager();
 		initMenu();
 		initGUI();
 		initCtrl();
@@ -34,11 +35,14 @@ public class MainFrame extends JFrame implements CtrlClass {
 		setTitle("Warframe Void Helper");
 		setSize(1280, 720);
 		setLocationRelativeTo(null);
+		
+	}
+	
+	private void initUIManager() {
 		try {
 			UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
 			SwingUtilities.updateComponentTreeUI(this);
 			Font f = new Font("微軟正黑體", Font.PLAIN, 16);
-			// Font f = new Font("新細明體", Font.PLAIN, 12);
 			Enumeration<Object> keys = UIManager.getDefaults().keys();
 			while (keys.hasMoreElements()) {
 				Object key = keys.nextElement();
@@ -46,11 +50,6 @@ public class MainFrame extends JFrame implements CtrlClass {
 				if (value != null && value instanceof FontUIResource)
 					UIManager.put(key, f);
 			}
-			UIManager.put("Table.rowHeight", f.getSize() + f.getSize() / 10);
-			UIManager.put("Tree.rowHeight", f.getSize() + f.getSize() / 10);
-			UIManager.put("Tree.closedIcon", new ImageIcon());
-			UIManager.put("Tree.openIcon", new ImageIcon());
-			UIManager.put("Tree.leafIcon", new ImageIcon());
 		} catch (Exception e) { e.printStackTrace(); }
 	}
 	

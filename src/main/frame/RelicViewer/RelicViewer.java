@@ -3,6 +3,8 @@ package main.frame.RelicViewer;
 import java.awt.*;
 import javax.swing.*;
 
+import java.util.*;
+
 import main.data.Lang;
 import main.frame.CtrlClass;
 
@@ -13,11 +15,14 @@ public class RelicViewer extends JPanel implements CtrlClass {
 	JTextField mSearchField;
 	JButton mSearchButton;
 	
+	ArrayList<JComponent> mObjectArray;
+	
 	public RelicViewer() {
 		init();
 		initGUI();
+		initObjArr();
 	}
-	
+
 	private void init() {
 		setLayout(new BorderLayout());
 	}
@@ -35,6 +40,12 @@ public class RelicViewer extends JPanel implements CtrlClass {
 		
 		add(top, BorderLayout.NORTH);
 		add(new JScrollPane(mRelicTable), BorderLayout.CENTER);
+	}
+	
+	private void initObjArr() {
+		mObjectArray.add(mSearchField);
+		mObjectArray.add(mSearchButton);
+		mObjectArray.add(mRelicTable);
 	}
 
 	@Override
