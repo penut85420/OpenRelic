@@ -52,9 +52,15 @@ public class RelicData {
 					mItemPart.put(line[i], new ItemPart(line[i]));
 				vr.addItem(mItemPart.get(line[i]));
 			}
-			if (mRelics.get(vr.getEra()) == null)
-				mRelics.put(vr.getEra(), new HashMap<>());
-			mRelics.get(vr.getEra()).put(vr.getCode(), vr);
+			
+			if (mVaultedRelics.get(vr.getRawEra()).get(vr.getCode()) == null) {
+				mVaultedRelics.get(vr.getRawEra()).put(vr.getCode(), false);
+				vr.setVaulted(false);
+			} else vr.setVaulted(true);
+			
+			if (mRelics.get(vr.getRawEra()) == null)
+				mRelics.put(vr.getRawEra(), new HashMap<>());
+			mRelics.get(vr.getRawEra()).put(vr.getCode(), vr);
 		}
 	}
 	

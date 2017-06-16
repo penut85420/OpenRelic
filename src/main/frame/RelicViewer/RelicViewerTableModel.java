@@ -12,6 +12,7 @@ public class RelicViewerTableModel extends AbstractTableModel {
 	String mFilter;
 	
 	Boolean isDisplayForma = true;
+	Boolean isDisplayVaulted = true;
 	
 	ArrayList<String> mRelic = new ArrayList<>();
 	ArrayList<String> mItemName = new ArrayList<>();
@@ -42,6 +43,9 @@ public class RelicViewerTableModel extends AbstractTableModel {
 					if (!isDisplayForma && item.getName().contains(Lang.t("forma")))	
 						addFlag = false;
 					
+					if (!isDisplayVaulted && vr.isVaulted())
+						addFlag = false;
+					
 					if (addFlag) {
 						mRelic.add(vr.getFullName());
 						mItemName.add(item.getName());
@@ -60,8 +64,13 @@ public class RelicViewerTableModel extends AbstractTableModel {
 		refresh();
 	}
 	
-	public void setFormaDisplay(boolean forma) {
-		isDisplayForma = forma;
+	public void setFormaDisplay(boolean b) {
+		isDisplayForma = b;
+		refresh();
+	}
+	
+	public void setVaultedDisplay(boolean b) {
+		isDisplayVaulted = b;
 		refresh();
 	}
 	

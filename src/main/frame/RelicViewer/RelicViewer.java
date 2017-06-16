@@ -117,6 +117,12 @@ public class RelicViewer extends JPanel implements SuperFrame {
 				mRelicViewerTableModel.setFormaDisplay(mDisplayForma.isSelected());
 			}
 		});
+		mDisplayVaulted.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				mRelicViewerTableModel.setVaultedDisplay(mDisplayVaulted.isSelected());
+			}
+		});
 	}
 	
 	private void ifInstantThenUpdate() {

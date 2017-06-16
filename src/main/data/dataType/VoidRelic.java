@@ -7,7 +7,7 @@ import main.data.Lang;
 public class VoidRelic {
 	String mEra;
 	String mCode;
-	boolean isVaulted;
+	Boolean isVaulted;
 	ArrayList<ItemPart> mDropItemList = new ArrayList<>();
 	
 	public VoidRelic(String str) {
@@ -20,9 +20,13 @@ public class VoidRelic {
 		mDropItemList.add(item);
 	}
 	
+	public void setVaulted(Boolean b) { isVaulted = b; }
+	
+	public String getRawEra() { return mEra; }
 	public String getEra() { return t(mEra); }
 	public String getCode() { return mCode; }
 	public String getFullName() { return getEra() + " " + getCode(); }
+	public Boolean isVaulted() { return isVaulted; }
 	public ArrayList<ItemPart> getDropItemList() { return mDropItemList; }
 	
 	public String getRarity(ItemPart item) {
