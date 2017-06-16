@@ -1,21 +1,35 @@
+# Use # as document comment
+
+# Display on menu
 lang-name: English
 
+# Menu title
 setting: Setting
 language: Language
 
-search:  Search 
-
+# Relic Viewer block
 relic-viewer: Relic Viewer
+
+search-target: Target: 
+search:  Search 
+clear:  Clear 
+update-instant: Instant Update
+formabp-display: FORMA BP Display
+forma: FORMA
+vaulted-display: Vaulted Relic Display
+
 relic: Relic
 relic-name: Relic Name
 item-name: Item Name
 rarity: Rarity
 
+# Relic term
 Lith: Lith
 Meso: Meso
 Neo: Neo
 Axi: Axi
 
+# Rarity term
 common: Common
 uncommon: Uncommon
 rare: Rare

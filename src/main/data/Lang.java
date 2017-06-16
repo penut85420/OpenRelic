@@ -18,9 +18,13 @@ public class Lang {
 			mLang.put(lang, new HashMap<>());
 			String[] langContent = LibraryIO.readFile(LangFolder + lang + ".lang").split("\r\n");
 			for (String seg: langContent) {
-				String[] segs = seg.split(": ");
-				if (segs.length < 2) continue;
-				mLang.get(lang).put(segs[0], segs[1]);
+				if (seg.startsWith("#")) continue;
+				if (seg.indexOf(": ") < 0) continue;
+				
+				Integer splitIdx = seg.indexOf(": ");
+				String key = seg.substring(0, splitIdx);
+				String value = seg.substring(splitIdx + 2);
+				mLang.get(lang).put(key, value);
 			}
 		}
 	}

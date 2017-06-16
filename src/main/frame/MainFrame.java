@@ -10,10 +10,10 @@ import javax.swing.plaf.*;
 import main.data.Lang;
 import main.frame.RelicViewer.RelicViewer;
 
-public class MainFrame extends JFrame implements CtrlClass {
+public class MainFrame extends JFrame implements SuperFrame {
 	private static final long serialVersionUID = 1L;
 	
-	ArrayList<CtrlClass> mCtrlCenter = new ArrayList<>();
+	ArrayList<SuperFrame> mCtrlCenter = new ArrayList<>();
 	
 	JTabbedPane mTabbedPane;
 	RelicViewer mRelicViewer;
@@ -88,7 +88,7 @@ public class MainFrame extends JFrame implements CtrlClass {
 	}
 	
 	private void refreshAll() {
-		for (CtrlClass p: mCtrlCenter)
+		for (SuperFrame p: mCtrlCenter)
 			p.refresh();
 	}
 

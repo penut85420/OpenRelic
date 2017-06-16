@@ -1,21 +1,36 @@
+# 使用井字號作為文件註解
+
+# 顯示在功能表上的名稱
 lang-name: 繁體中文
 
+# 功能表標題
 setting: 設定
 language: 語言
 
-search: 　搜尋　
-
+# 遺物總覽
 relic-viewer: 遺物總覽
+
+search-target: 搜尋目標：
+search: 　搜尋　
+clear: 　清除　
+update-instant: 即時更新
+formabp-display: 顯示FORMA藍圖
+forma: FORMA
+vaulted-display: 顯示已入庫的遺物
+
+# 遺物總覽表格
 relic: 遺物
 relic-name: 遺物名稱
 item-name: 部件名稱
 rarity: 稀有度
 
+# 遺物用語
 Lith: 古紀
 Meso: 前紀
 Neo: 中紀
 Axi: 後紀
 
+# 稀有度用語
 common: 銅
 uncommon: 銀
 rare: 金

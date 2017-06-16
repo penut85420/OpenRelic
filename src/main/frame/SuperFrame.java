@@ -1,5 +1,5 @@
 package main.frame;
 
-public interface CtrlClass {
+public interface SuperFrame {
 	abstract public void refresh();
 }
