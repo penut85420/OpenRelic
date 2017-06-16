@@ -13,7 +13,8 @@
 希望可以做到即便我有一天也AFK了  
 也不怕沒有人做遺物統整給大家  
   
-Alpha Download: [Google Drive](http://goo.gl/KqJrbU)
+Alpha Download: [Google Drive](http://goo.gl/KqJrbU)  
+需要先安裝[Java JRE 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 
 遺物相關資料與圖示版權歸屬Digital Extremes  
 如有侵權請告知  
