@@ -1,0 +1,687 @@
+﻿Lith	K1
+ODONATA PRIME 外甲 Blueprint
+伯斯頓 PRIME 槍托
+狼牙 PRIME Blueprint
+TRINITY PRIME Blueprint
+猛虎 PRIME 槍管
+喀婆薩 PRIME 項圈扣
+
+Lith	S4
+FORMA Blueprint
+帕里斯 PRIME Blueprint
+雷克斯 PRIME Blueprint
+TRINITY PRIME 機體 Blueprint
+喀婆薩 PRIME 庫狛項圈 Blueprint
+SARYN PRIME Blueprint
+
+Lith	S5
+伯斯頓 PRIME 槍機
+搬運者 PRIME 外殼
+狼牙 PRIME 刀刃
+迦倫提恩 PRIME 握柄
+野馬雙槍 PRIME 連結器
+旋刃飛刀 PRIME 刀刃
+
+Lith	V1
+伯斯頓 PRIME 槍托
+帕里斯 PRIME 上弓臂
+帕里斯 PRIME 下弓臂
+FORMA Blueprint
+VOLT PRIME 系統 Blueprint
+重擊巨錘 PRIME 握柄
+
+Lith	V2
+帕里斯 PRIME 下弓臂
+狼牙 PRIME Blueprint
+雷克斯 PRIME 槍管
+FORMA Blueprint
+帕里斯 PRIME 上弓臂
+VAUBAN PRIME 系統 Blueprint
+
+Meso	C2
+西諾斯 PRIME 上弓臂
+迦倫提恩 PRIME 刀刃
+野馬 PRIME Blueprint
+VALKYR PRIME 頭部神經光元 Blueprint
+ODONATA PRIME Blueprint
+搬運者 PRIME 頭部
+
+Meso	D1
+FORMA Blueprint
+歐特魯斯 PRIME 握柄
+雷克斯 PRIME Blueprint
+FORMA Blueprint
+歐特魯斯 PRIME 刀刃
+雙短柄戰鐮 PRIME 刀刃
+
+Meso	F1
+SARYN PRIME 系統 Blueprint
+帕里斯 PRIME 下弓臂
+野馬 PRIME 槍機
+NEKROS PRIME 頭部神經光元 Blueprint
+雙短柄戰鐮 PRIME 握柄
+重擊巨錘 PRIME Blueprint
+
+Meso	S2
+帕里斯 PRIME 弓弦
+迦倫提恩 PRIME 刀刃
+野馬 PRIME Blueprint
+FORMA Blueprint
+帕里斯 PRIME 弓身
+SARYN PRIME 機體 Blueprint
+
+Meso	S3
+NEKROS PRIME 機體 Blueprint
+VALKYR PRIME Blueprint
+野馬雙槍 PRIME Blueprint
+ASH PRIME Blueprint
+FORMA Blueprint
+旋刃飛刀 PRIME 鏢袋
+
+Meso	V1
+伯斯頓 PRIME Blueprint
+搬運者 PRIME Blueprint
+旋刃飛刀 PRIME Blueprint
+FORMA Blueprint
+布萊頓 PRIME Blueprint
+守望者 PRIME 槍機
+
+Meso	V3
+FORMA Blueprint
+搬運者 PRIME Blueprint
+旋刃飛刀 PRIME Blueprint
+VOLT PRIME 機體 Blueprint
+喀婆薩 PRIME 項圈帶
+VALKYR PRIME 系統 Blueprint
+
+Neo	A1
+FORMA Blueprint
+布萊頓 PRIME 槍管
+搬運者 PRIME 系統
+守望者 PRIME Blueprint
+西諾斯 PRIME 弓弦
+史提托雙槍 PRIME Blueprint
+
+Neo	N3
+ODONATA PRIME 系統 Blueprint
+帕里斯 PRIME 弓弦
+雷克斯 PRIME 槍管
+ASH PRIME 頭部神經光元 Blueprint
+狼牙 PRIME 握柄
+NEKROS PRIME 系統 Blueprint
+
+Neo	N4
+ASH PRIME 機體 Blueprint
+布萊頓 PRIME 槍托
+帕里斯 PRIME 弓弦
+FORMA Blueprint
+凱旋之爪 PRIME Blueprint
+侍刃 PRIME 刀刃
+
+Neo	V2
+布萊頓 PRIME 槍托
+狼牙 PRIME 握柄
+迦倫提恩 PRIME 刀刃
+FORMA Blueprint
+迦倫提恩 PRIME 握柄
+VAUBAN PRIME Blueprint
+
+Neo	V3
+帕里斯 PRIME 弓弦
+搬運者 PRIME 系統
+迦倫提恩 PRIME 刀刃
+FORMA Blueprint
+猛虎 PRIME 槍機
+VAUBAN PRIME 頭部神經光元 Blueprint
+
+Neo	V4
+猛虎 PRIME 槍托
+西諾斯 PRIME 弓身
+野馬 PRIME 槍機
+ASH PRIME 頭部神經光元 Blueprint
+SARYN PRIME 頭部神經光元 Blueprint
+凱旋之爪 PRIME 手套
+
+Axi	A1
+TRINITY PRIME 系統 Blueprint
+布萊頓 PRIME 槍托
+重擊巨錘 PRIME 錘頭
+史提托雙槍 PRIME 槍管
+雙短柄戰鐮 PRIME 握柄
+侍刃 PRIME Blueprint
+
+Axi	C1
+TRINITY PRIME 頭部神經光元 Blueprint
+守望者 PRIME 槍管
+雷克斯 PRIME 槍機
+FORMA Blueprint
+歐特魯斯 PRIME Blueprint
+西諾斯 PRIME 下弓臂
+
+Axi	G1
+NEKROS PRIME 機體 Blueprint
+SARYN PRIME 系統 Blueprint
+帕里斯 PRIME Blueprint
+FORMA Blueprint
+喀婆薩 PRIME 庫狛項圈 Blueprint
+迦倫提恩 PRIME Blueprint
+
+Axi	N1
+FORMA Blueprint
+布萊頓 PRIME Blueprint
+狼牙 PRIME 刀刃
+ODONATA PRIME 機翼 Blueprint
+史提托雙槍 PRIME 連接器
+ASH PRIME 系統 Blueprint
+
+Axi	N2
+搬運者 PRIME 外殼
+野馬 PRIME Blueprint
+雷克斯 PRIME 槍機
+ASH PRIME 頭部神經光元 Blueprint
+FORMA Blueprint
+侍刃 PRIME 握柄
+
+Axi	N3
+FORMA Blueprint
+帕里斯 PRIME 上弓臂
+雙短柄戰鐮 PRIME Blueprint
+VOLT PRIME Blueprint
+野馬 PRIME 槍管
+NEKROS PRIME Blueprint
+
+Axi	T1
+ODONATA PRIME 外甲 Blueprint
+SARYN PRIME 系統 Blueprint
+守望者 PRIME 槍管
+伯斯頓 PRIME 槍管
+史提托雙槍 PRIME 槍機
+猛虎 PRIME Blueprint
+
+Axi	V1
+ODONATA PRIME 系統 Blueprint
+搬運者 PRIME 系統
+雙短柄戰鐮 PRIME Blueprint
+FORMA Blueprint
+VOLT PRIME 頭部神經光元 Blueprint
+VAUBAN PRIME 機體 Blueprint
+
+Axi	V4
+ODONATA PRIME 外甲 Blueprint
+TRINITY PRIME 系統 Blueprint
+帕里斯 PRIME Blueprint
+FORMA Blueprint
+西諾斯 PRIME Blueprint
+守望者 PRIME 槍托
+
+Axi	V5
+FORMA Blueprint
+凱旋之爪 PRIME 爪刃
+雙短柄戰鐮 PRIME Blueprint
+布萊頓 PRIME 槍機
+猛虎 PRIME 槍機
+VALKYR PRIME 機體 Blueprint
+
+Neo	S5
+EMBER PRIME 頭部神經光元 Blueprint
+拉特昂 PRIME 槍機
+收割者 PRIME Blueprint
+FROST PRIME 系統 Blueprint
+戰刃 PRIME 圓盤
+暗殺者 PRIME 槍機
+
+Meso	F2
+EMBER PRIME 機體 Blueprint
+拉特昂 PRIME 槍托
+暗殺者 PRIME 槍管
+FORMA Blueprint
+收割者 PRIME 刀刃
+FROST PRIME Blueprint
+
+Lith	G1
+FROST PRIME 機體 Blueprint
+拉特昂 PRIME Blueprint
+收割者 PRIME 握柄
+EMBER PRIME 系統 Blueprint
+FORMA Blueprint
+戰刃 PRIME Blueprint
+
+Axi	E1
+FROST PRIME 頭部神經光元 Blueprint
+拉特昂 PRIME 槍管
+暗殺者 PRIME Blueprint
+FORMA Blueprint
+戰刃 PRIME 刀刃
+EMBER PRIME Blueprint
+
+Neo	B1
+TRINITY PRIME 系統 Blueprint
+帕里斯 PRIME 弓弦
+野馬 PRIME 槍機
+伯斯頓 PRIME 槍管
+守望者 PRIME 槍托
+BANSHEE PRIME 機體 Blueprint
+
+Neo	T1
+FORMA Blueprint
+伯斯頓 PRIME Blueprint
+雙短柄戰鐮 PRIME Blueprint
+BANSHEE PRIME Blueprint
+重擊巨錘 PRIME 握柄
+猛虎 PRIME Blueprint
+
+Lith	N2
+帕里斯 PRIME 上弓臂
+搬運者 PRIME 系統
+旋刃飛刀 PRIME Blueprint
+喀婆薩 PRIME 項圈扣
+赫利俄斯 PRIME Blueprint
+NEKROS PRIME 系統 Blueprint
+
+Lith	V3
+布萊頓 PRIME Blueprint
+帕里斯 PRIME 下弓臂
+西諾斯 PRIME 上弓臂
+猛虎 PRIME 槍管
+赫利俄斯 PRIME 系統
+VALKYR PRIME 系統 Blueprint
+
+Meso	N3
+伯斯頓 PRIME 槍托
+布萊頓 PRIME 槍管
+野馬 PRIME Blueprint
+悅音 PRIME 槍管
+搬運者 PRIME 頭部
+NEKROS PRIME Blueprint
+
+Meso	S4
+BANSHEE PRIME 頭部神經光元 Blueprint
+狼牙 PRIME Blueprint
+迦倫提恩 PRIME 刀刃
+TRINITY PRIME Blueprint
+狼牙 PRIME 握柄
+SARYN PRIME Blueprint
+
+Meso	V4
+FORMA Blueprint
+搬運者 PRIME Blueprint
+雷克斯 PRIME 槍管
+ASH PRIME 頭部神經光元 Blueprint
+VALKYR PRIME 頭部神經光元 Blueprint
+VAUBAN PRIME 機體 Blueprint
+
+Neo	N5
+FORMA Blueprint
+SARYN PRIME 系統 Blueprint
+赫利俄斯 PRIME 外殼
+ASH PRIME 系統 Blueprint
+史提托雙槍 PRIME 連接器
+侍刃 PRIME Blueprint
+
+Neo	T1
+FORMA Blueprint
+伯斯頓 PRIME Blueprint
+雙短柄戰鐮 PRIME Blueprint
+BANSHEE PRIME Blueprint
+重擊巨錘 PRIME 握柄
+猛虎 PRIME Blueprint
+
+Axi	B1
+ASH PRIME 機體 Blueprint
+悅音 PRIME Blueprint
+狼牙 PRIME 刀刃
+喀婆薩 PRIME 項圈扣
+西諾斯 PRIME Blueprint
+BANSHEE PRIME 系統 Blueprint
+
+Axi	E2
+布萊頓 PRIME 槍托
+帕里斯 PRIME Blueprint
+雷克斯 PRIME 槍機
+FORMA Blueprint
+野馬 PRIME 槍管
+悅音 PRIME 槍機
+
+Axi	H1
+FORMA Blueprint
+守望者 PRIME 槍管
+重擊巨錘 PRIME 錘頭
+TRINITY PRIME 機體 Blueprint
+史提托雙槍 PRIME 槍機
+赫利俄斯 PRIME 頭部
+
+Lith	A1
+FORMA Blueprint
+布萊頓 PRIME 槍管
+瓦斯托 PRIME 槍機
+SARYN PRIME 頭部神經光元 Blueprint
+守望者 PRIME Blueprint
+史提托雙槍 PRIME Blueprint
+
+Lith	C1
+NOVA PRIME 系統 Blueprint
+NOVA PRIME 頭部神經光元 Blueprint
+狼牙 PRIME 刀刃
+FORMA Blueprint
+喀婆薩 PRIME 項圈帶
+搬運者 PRIME 頭部
+
+Lith	F1
+狼牙 PRIME 刀刃
+帕里斯 PRIME Blueprint
+FORMA Blueprint
+ODONATA PRIME Blueprint
+分裂斬斧 PRIME Blueprint
+重擊巨錘 PRIME Blueprint
+
+Neo	B2
+布萊頓 PRIME 槍托
+狼牙 PRIME Blueprint
+猛虎 PRIME 槍托
+FORMA Blueprint
+凱旋之爪 PRIME Blueprint
+BANSHEE PRIME 機體 Blueprint
+
+Neo	N2
+狼牙 PRIME Blueprint
+瓦斯托 PRIME 槍管
+雷克斯 PRIME Blueprint
+FORMA Blueprint
+NOVA PRIME Blueprint
+VAUBAN PRIME 系統 Blueprint
+
+Neo	N6
+西諾斯 PRIME 上弓臂
+迦倫提恩 PRIME 刀刃
+野馬 PRIME 槍機
+TRINITY PRIME Blueprint
+席芭莉絲 PRIME 槍機
+侍刃 PRIME 握柄
+
+Neo	N7
+TRINITY PRIME 頭部神經光元 Blueprint
+凱旋之爪 PRIME 爪刃
+悅音 PRIME Blueprint
+BANSHEE PRIME Blueprint
+VALKYR PRIME 頭部神經光元 Blueprint
+NEKROS PRIME 系統 Blueprint
+
+Neo	S1
+搬運者 PRIME 外殼
+月神 PRIME Blueprint
+雷克斯 PRIME 槍管
+FORMA Blueprint
+TRINITY PRIME 機體 Blueprint
+SARYN PRIME Blueprint
+
+Neo	S3
+伯斯頓 PRIME 槍機
+搬運者 PRIME Blueprint
+月神 PRIME 槍管
+FORMA Blueprint
+瓦斯托 PRIME Blueprint
+旋刃飛刀 PRIME 刀刃
+
+Neo	S6
+FORMA Blueprint
+TRINITY PRIME 頭部神經光元 Blueprint
+伯斯頓 PRIME Blueprint
+喀婆薩 PRIME 項圈扣
+猛虎 PRIME 槍機
+席瓦 & 神盾 PRIME 護手
+
+Neo	V5
+帕里斯 PRIME 弓弦
+席瓦 & 神盾 PRIME 握柄
+赫利俄斯 PRIME 外殼
+FORMA Blueprint
+伯斯頓 PRIME 槍管
+VAUBAN PRIME 頭部神經光元 Blueprint
+
+Lith	A2
+FORMA Blueprint
+VALKYR PRIME Blueprint
+雷克斯 PRIME 槍管
+西諾斯 PRIME Blueprint
+野馬雙槍 PRIME 連結器
+史提托雙槍 PRIME Blueprint
+
+Lith	N1
+NEKROS PRIME 機體 Blueprint
+狼牙 PRIME 刀刃
+野馬 PRIME Blueprint
+FORMA Blueprint
+野馬雙槍 PRIME 連結器
+NOVA PRIME 機體 Blueprint
+
+Lith	N3
+VALKYR PRIME Blueprint
+伯斯頓 PRIME 槍機
+席芭莉絲 PRIME 槍托
+FORMA Blueprint
+布萊頓 PRIME Blueprint
+NEKROS PRIME Blueprint
+
+Lith	S3
+帕里斯 PRIME 弓弦
+搬運者 PRIME 系統
+野馬雙槍 PRIME Blueprint
+ASH PRIME Blueprint
+月神 PRIME 槍機
+旋刃飛刀 PRIME 鏢袋
+
+Lith	S6
+FORMA Blueprint
+狼牙 PRIME 刀刃
+雙短柄戰鐮 PRIME Blueprint
+VALKYR PRIME 頭部神經光元 Blueprint
+喀婆薩 PRIME 項圈帶
+旋刃飛刀 PRIME 鏢袋
+
+Lith	V4
+NEKROS PRIME 機體 Blueprint
+凱旋之爪 PRIME 爪刃
+旋刃飛刀 PRIME Blueprint
+猛虎 PRIME 槍管
+赫利俄斯 PRIME Blueprint
+VAUBAN PRIME 機體 Blueprint
+
+Meso	N4
+SARYN PRIME 系統 Blueprint
+帕里斯 PRIME 上弓臂
+歐特魯斯 PRIME 握柄
+FORMA Blueprint
+OBERON PRIME Blueprint
+侍刃 PRIME 刀刃
+
+Meso	S5
+伯斯頓 PRIME 槍托
+布萊頓 PRIME 槍管
+雷克斯 PRIME 槍管
+FORMA Blueprint
+SARYN PRIME 頭部神經光元 Blueprint
+席芭莉絲 PRIME 槍管
+
+Meso	S6
+VALKYR PRIME Blueprint
+赫利俄斯 PRIME 外殼
+迦倫提恩 PRIME 刀刃
+猛虎 PRIME 槍機
+西諾斯 PRIME 弓弦
+旋刃飛刀 PRIME 刀刃
+
+Meso	V2
+ASH PRIME 機體 Blueprint
+帕里斯 PRIME Blueprint
+瓦斯托 PRIME 槍機
+FORMA Blueprint
+VOLT PRIME 機體 Blueprint
+侍刃 PRIME 刀刃
+
+Meso	V5
+旋刃飛刀 PRIME Blueprint
+西諾斯 PRIME 弓身
+野馬 PRIME Blueprint
+席瓦 & 神盾 PRIME Blueprint
+悅音 PRIME 槍管
+凱旋之爪 PRIME 手套
+
+Meso	O1
+FORMA Blueprint
+帕里斯 PRIME 下弓臂
+野馬雙槍 PRIME Blueprint
+史提托雙槍 PRIME 連接器
+西諾斯 PRIME 弓弦
+OBERON PRIME 頭部神經光元 Blueprint
+
+Axi	A2
+FORMA Blueprint
+雷克斯 PRIME 槍機
+雷克斯 PRIME 槍管
+雷克斯 PRIME Blueprint
+雷克斯雙槍 PRIME Blueprint
+雷克斯雙槍 PRIME 連接器
+
+Axi	B2
+席芭莉絲 PRIME Blueprint
+狼牙 PRIME 刀刃
+重擊巨錘 PRIME 錘頭
+FORMA Blueprint
+歐特魯斯 PRIME Blueprint
+BANSHEE PRIME 系統 Blueprint
+
+Axi	C2
+FORMA Blueprint
+TRINITY PRIME 系統 Blueprint
+布萊頓 PRIME Blueprint
+席瓦 & 神盾 PRIME 刀刃
+重擊巨錘 PRIME 握柄
+西諾斯 PRIME 下弓臂
+
+Axi	H2
+OBERON PRIME 機體 Blueprint
+狼牙 PRIME 握柄
+雷克斯 PRIME 槍機
+TRINITY PRIME 機體 Blueprint
+史提托雙槍 PRIME 槍管
+赫利俄斯 PRIME 頭部
+
+Axi	O1
+FORMA Blueprint
+帕里斯 PRIME Blueprint
+悅音 PRIME Blueprint
+史提托雙槍 PRIME 槍機
+迦倫提恩 PRIME 握柄
+OBERON PRIME 系統 Blueprint
+
+Lith	F2
+ODONATA PRIME 系統 Blueprint
+帕里斯 PRIME 上弓臂
+飛揚 PRIME 星鏢
+伯斯頓 PRIME 槍管
+狼牙 PRIME 握柄
+VAUBAN PRIME Blueprint
+
+Lith	M1
+FORMA Blueprint
+野豬 PRIME 槍機
+雷克斯 PRIME 槍機
+月神 PRIME Blueprint
+達克拉 PRIME Blueprint
+MAG PRIME Blueprint
+
+Lith	S2
+NYX PRIME Blueprint
+搬運者 PRIME 系統
+野馬雙槍 PRIME Blueprint
+FORMA Blueprint
+喀婆薩 PRIME 項圈帶
+月神 PRIME 槍托
+
+Meso	B1
+FORMA Blueprint
+歐特魯斯 PRIME 握柄
+達克拉 PRIME 握柄
+MAG PRIME 機體 Blueprint
+歐特魯斯 PRIME Blueprint
+野豬 PRIME 槍托
+
+Meso	C1
+FORMA Blueprint
+NOVA PRIME 頭部神經光元 Blueprint
+SARYN PRIME 系統 Blueprint
+ASH PRIME Blueprint
+分裂斬斧 PRIME 握柄
+搬運者 PRIME 頭部
+
+Meso	N1
+布萊頓 PRIME 槍托
+狼牙 PRIME 握柄
+狼牙 PRIME Blueprint
+FORMA Blueprint
+雙短柄戰鐮 PRIME 握柄
+NYX PRIME 頭部神經光元 Blueprint
+
+Meso	N2
+狼牙 PRIME 握柄
+野馬 PRIME Blueprint
+飛揚 PRIME Blueprint
+ASH PRIME 頭部神經光元 Blueprint
+FORMA Blueprint
+VAUBAN PRIME 頭部神經光元 Blueprint
+
+Meso	S1
+NOVA PRIME 系統 Blueprint
+帕里斯 PRIME Blueprint
+猛虎 PRIME 槍托
+帕里斯 PRIME 上弓臂
+ODONATA PRIME Blueprint
+月神 PRIME Blueprint
+
+Neo	D1
+MAG PRIME 系統 Blueprint
+瓦斯托 PRIME 槍管
+野豬 PRIME Blueprint
+FORMA Blueprint
+TRINITY PRIME 頭部神經光元 Blueprint
+達克拉 PRIME 刀刃
+
+Neo	N1
+FORMA Blueprint
+守望者 PRIME 槍管
+飛揚 PRIME 星鏢
+喀婆薩 PRIME 庫狛項圈 Blueprint
+月神 PRIME 槍機
+NYX PRIME 機體 Blueprint
+
+Neo	S2
+NOVA PRIME 系統 Blueprint
+伯斯頓 PRIME 槍托
+帕里斯 PRIME 下弓臂
+NYX PRIME 系統 Blueprint
+帕里斯 PRIME 上弓臂
+SARYN PRIME 機體 Blueprint
+
+Neo	V1
+FORMA Blueprint
+NYX PRIME Blueprint
+雙短柄戰鐮 PRIME Blueprint
+VOLT PRIME Blueprint
+野馬 PRIME 槍管
+NOVA PRIME 機體 Blueprint
+
+Axi	S1
+FORMA Blueprint
+野馬 PRIME 槍機
+野馬 PRIME Blueprint
+TRINITY PRIME Blueprint
+野馬雙槍 PRIME 連結器
+分裂斬斧 PRIME 刀刃
+
+Axi	V2
+MAG PRIME 頭部神經光元 Blueprint
+TRINITY PRIME 系統 Blueprint
+飛揚 PRIME 鏢袋
+布萊頓 PRIME 槍機
+野豬 PRIME 槍管
+守望者 PRIME 槍托

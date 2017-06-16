@@ -23,6 +23,7 @@ public class RelicViewerTableModel extends AbstractTableModel {
 	}
 	
 	public void refresh() {
+		mColsName = new String[]{Lang.t("relic-name"), Lang.t("item-name"), Lang.t("rarity")};
 		clear();
 		for (String key: RelicData.mRelics.keySet()) {
 			for (String kkey: RelicData.mRelics.get(key).keySet()) {
@@ -31,10 +32,11 @@ public class RelicViewerTableModel extends AbstractTableModel {
 					boolean addFlag = true;
 					
 					if (mFilter != null)
-						for (String search: mFilter.split(" ")) {
-							if (vr.getFullName().contains(search)) continue;
-							if (item.getName().contains(search)) continue;
-							if (vr.getRarity(item).contains(search)) continue;
+						for (String ss: mFilter.split(" ")) {
+							String search = ss.toLowerCase();
+							if (vr.getFullName().toLowerCase().contains(search)) continue;
+							if (item.getName().toLowerCase().contains(search)) continue;
+							if (vr.getRarity(item).toLowerCase().contains(search)) continue;
 							
 							addFlag = false;
 							break;

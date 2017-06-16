@@ -1,0 +1,278 @@
+ASH PRIME
+ASH PRIME Chassis Blueprint
+ASH PRIME Systems Blueprint
+ASH PRIME Blueprint
+ASH PRIME Neuroptics Blueprint
+
+BANSHEE PRIME
+BANSHEE PRIME Chassis Blueprint
+BANSHEE PRIME Systems Blueprint
+BANSHEE PRIME Blueprint
+BANSHEE PRIME Neuroptics Blueprint
+
+EMBER PRIME
+EMBER PRIME Chassis Blueprint
+EMBER PRIME Systems Blueprint
+EMBER PRIME Blueprint
+EMBER PRIME Neuroptics Blueprint
+
+FROST PRIME
+FROST PRIME Chassis Blueprint
+FROST PRIME Systems Blueprint
+FROST PRIME Blueprint
+FROST PRIME Neuroptics Blueprint
+
+MAG PRIME
+MAG PRIME Chassis Blueprint
+MAG PRIME Systems Blueprint
+MAG PRIME Blueprint
+MAG PRIME Neuroptics Blueprint
+
+NEKROS PRIME
+NEKROS PRIME Chassis Blueprint
+NEKROS PRIME Systems Blueprint
+NEKROS PRIME Blueprint
+NEKROS PRIME Neuroptics Blueprint
+
+NOVA PRIME
+NOVA PRIME Chassis Blueprint
+NOVA PRIME Systems Blueprint
+NOVA PRIME Blueprint
+NOVA PRIME Neuroptics Blueprint
+
+NYX PRIME
+NYX PRIME Chassis Blueprint
+NYX PRIME Systems Blueprint
+NYX PRIME Blueprint
+NYX PRIME Neuroptics Blueprint
+
+OBERON PRIME
+OBERON PRIME Chassis Blueprint
+OBERON PRIME Systems Blueprint
+OBERON PRIME Blueprint
+OBERON PRIME Neuroptics Blueprint
+
+ODONATA PRIME
+ODONATA PRIME Harness Blueprint
+ODONATA PRIME Wings Blueprint
+ODONATA PRIME Systems Blueprint
+ODONATA PRIME Blueprint
+
+SARYN PRIME
+SARYN PRIME Chassis Blueprint
+SARYN PRIME Systems Blueprint
+SARYN PRIME Blueprint
+SARYN PRIME Neuroptics Blueprint
+
+TRINITY PRIME
+TRINITY PRIME Chassis Blueprint
+TRINITY PRIME Systems Blueprint
+TRINITY PRIME Blueprint
+TRINITY PRIME Neuroptics Blueprint
+
+VALKYR PRIME
+VALKYR PRIME Chassis Blueprint
+VALKYR PRIME Systems Blueprint
+VALKYR PRIME Blueprint
+VALKYR PRIME Neuroptics Blueprint
+
+VAUBAN PRIME
+VAUBAN PRIME Chassis Blueprint
+VAUBAN PRIME Systems Blueprint
+VAUBAN PRIME Blueprint
+VAUBAN PRIME Neuroptics Blueprint
+
+VOLT PRIME
+VOLT PRIME Chassis Blueprint
+VOLT PRIME Systems Blueprint
+VOLT PRIME Blueprint
+VOLT PRIME Neuroptics Blueprint
+
+Burston PRIME
+Burston PRIME Stock
+Burston PRIME Receiver
+Burston PRIME Barrel
+Burston PRIME Blueprint
+
+Nikana PRIME
+Nikana PRIME Blade
+Nikana PRIME Hilt
+Nikana PRIME Blueprint
+
+Venka PRIME
+Venka PRIME Gauntlet
+Venka PRIME Blades
+Venka PRIME Blueprint
+
+Scindo PRIME
+Scindo PRIME Blade
+Scindo PRIME Handle
+Scindo PRIME Blueprint
+
+史提托雙槍 PRIME
+史提托雙槍 PRIME Receiver
+史提托雙槍 PRIME Barrel
+史提托雙槍 PRIME Blueprint
+史提托雙槍 PRIME 連接器
+
+喀婆薩 PRIME
+喀婆薩 PRIME 庫狛項圈 Blueprint
+喀婆薩 PRIME 項圈帶
+喀婆薩 PRIME 項圈扣
+
+守望者 PRIME
+守望者 PRIME Stock
+守望者 PRIME Receiver
+守望者 PRIME Barrel
+守望者 PRIME Blueprint
+
+布萊頓 PRIME
+布萊頓 PRIME Stock
+布萊頓 PRIME Receiver
+布萊頓 PRIME Barrel
+布萊頓 PRIME Blueprint
+
+Paris PRIME
+Paris PRIME 上弓臂
+Paris PRIME 下弓臂
+Paris PRIME 弓弦
+Paris PRIME 弓身
+Paris PRIME Blueprint
+
+Silva & Aegis PRIME
+席瓦 & 神盾 PRIME Blade
+Silva & Aegis Prime Hilt
+席瓦 & 神盾 PRIME Blueprint
+席瓦 & 神盾 PRIME Guard
+
+席芭莉絲 PRIME
+席芭莉絲 PRIME Stock
+席芭莉絲 PRIME Receiver
+席芭莉絲 PRIME Barrel
+席芭莉絲 PRIME Blueprint
+
+悅音 PRIME
+悅音 PRIME Receiver
+悅音 PRIME Barrel
+悅音 PRIME Blueprint
+
+Glaive PRIME
+戰刃 PRIME Blade
+戰刃 PRIME 圓盤
+戰刃 PRIME Blueprint
+
+拉特昂 PRIME
+拉特昂 PRIME Stock
+拉特昂 PRIME Receiver
+拉特昂 PRIME Barrel
+拉特昂 PRIME Blueprint
+
+搬運者 PRIME
+搬運者 PRIME 外殼
+搬運者 PRIME Systems
+搬運者 PRIME Blueprint
+搬運者 PRIME 頭部
+
+收割者 PRIME
+收割者 PRIME Blade
+收割者 PRIME Handle
+收割者 PRIME Blueprint
+
+Spira PRIME
+旋刃飛刀 PRIME Blade
+旋刃飛刀 PRIME Blueprint
+旋刃飛刀 PRIME 鏢袋
+
+暗殺者 PRIME
+暗殺者 PRIME Receiver
+暗殺者 PRIME Barrel
+暗殺者 PRIME Blueprint
+
+月神 PRIME
+月神 PRIME Stock
+月神 PRIME Receiver
+月神 PRIME Barrel
+月神 PRIME Blueprint
+
+歐特魯斯 PRIME
+歐特魯斯 PRIME Blade
+歐特魯斯 PRIME Handle
+歐特魯斯 PRIME Blueprint
+
+狼牙 PRIME
+狼牙 PRIME Blade
+狼牙 PRIME Handle
+狼牙 PRIME Blueprint
+
+猛虎 PRIME
+猛虎 PRIME Stock
+猛虎 PRIME Receiver
+猛虎 PRIME Barrel
+猛虎 PRIME Blueprint
+
+瓦斯托 PRIME
+瓦斯托 PRIME Receiver
+瓦斯托 PRIME Barrel
+瓦斯托 PRIME Blueprint
+
+西諾斯 PRIME
+西諾斯 PRIME 上弓臂
+西諾斯 PRIME 下弓臂
+西諾斯 PRIME 弓弦
+西諾斯 PRIME 弓身
+西諾斯 PRIME Blueprint
+
+赫利俄斯 PRIME
+赫利俄斯 PRIME 外殼
+赫利俄斯 PRIME Systems
+赫利俄斯 PRIME Blueprint
+赫利俄斯 PRIME 頭部
+
+迦倫提恩 PRIME
+迦倫提恩 PRIME Blade
+迦倫提恩 PRIME Handle
+迦倫提恩 PRIME Blueprint
+
+達克拉 PRIME
+達克拉 PRIME Blade
+達克拉 PRIME Handle
+達克拉 PRIME Blueprint
+
+Fragor PRIME
+重擊巨錘 PRIME Handle
+重擊巨錘 PRIME Blueprint
+重擊巨錘 PRIME 錘頭
+
+野豬 PRIME
+野豬 PRIME Stock
+野豬 PRIME Receiver
+野豬 PRIME Barrel
+野豬 PRIME Blueprint
+
+野馬 PRIME
+野馬 PRIME Receiver
+野馬 PRIME Barrel
+野馬 PRIME Blueprint
+
+Akbronco PRIME
+野馬雙槍 PRIME Blueprint
+野馬雙槍 PRIME 連結器
+
+雙短柄戰鐮 PRIME
+雙短柄戰鐮 PRIME Blade
+雙短柄戰鐮 PRIME Handle
+雙短柄戰鐮 PRIME Blueprint
+
+雷克斯 PRIME
+雷克斯 PRIME Receiver
+雷克斯 PRIME Barrel
+雷克斯 PRIME Blueprint
+
+雷克斯雙槍 PRIME
+雷克斯雙槍 PRIME Blueprint
+雷克斯雙槍 PRIME 連接器
+
+Hikou PRIME
+飛揚 PRIME 星鏢
+飛揚 PRIME Blueprint
+飛揚 PRIME 鏢袋

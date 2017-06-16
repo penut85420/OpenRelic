@@ -3,9 +3,17 @@
 # 顯示在功能表上的名稱
 lang-name: 繁體中文
 
+# 視窗標題
+window-title: Open Relic 開源遺物
+
 # 功能表標題
 setting: 設定
+font-setting: 設定字型
 language: 語言
+
+# 字型設定視窗
+font: 字型：
+check: 確定
 
 # 遺物總覽
 relic-viewer: 遺物總覽
@@ -34,3 +42,89 @@ Axi: 後紀
 common: 銅
 uncommon: 銀
 rare: 金
+
+#部件用語
+PRIME: PRIME
+Blueprint: 藍圖
+FORMA: FORMA
+
+Chassis: 機體
+Systems: 系統
+Neuroptics: 頭部神經光元
+Harness: 外甲
+Wings: 機翼
+Barrel: 槍管
+Receiver: 槍機
+Stock: 槍托
+Blade: 刀刃
+Hilt: 握柄
+Blades: 爪刃
+Gauntlet: 手套
+Handle: 握柄
+Lower_Limb: 下弓臂
+Upper_Limb: 上弓臂
+Grip: 弓身
+String: 弓弦
+Guard: 護手
+Disc: 圓盤
+Cerebrum: 頭部
+Carapace: 外殼
+Pouch: 鏢袋
+Head: 錘頭
+Link: 連結器
+Stars: 星鏢
+Collar_Band: 項圈帶
+Collar_Buckle: 項圈扣
+Collar: 庫狛項圈
+
+ASH: ASH
+BANSHEE: BANSHEE
+EMBER: EMBER
+FROST: FROST
+MAG: MAG
+NEKROS: NEKROS
+NOVA: NOVA
+NYX: NYX
+OBERON: OBERON
+ODONATA: ODONATA
+SARYN: SARYN
+TRINITY: TRINITY
+VALKYR: VALKYR
+VAUBAN: VAUBAN
+VOLT: VOLT
+Burston: 伯斯頓
+Nikana: 侍刃
+Venka: 凱旋之爪
+Scindo: 分裂斬斧
+Akstiletto: 史提托雙槍
+Kavasa: 喀婆薩
+Vectis: 守望者
+Braton: 布萊頓
+Paris: 帕里斯
+Silva: 席瓦
+Aegis: 神盾
+Sybaris: 席芭莉絲
+Euphona: 悅音
+Glaive: 戰刃
+Latron: 拉特昂
+Carrier: 搬運者
+Reaper: 收割者
+Spira: 旋刃飛刀
+Sicarus: 暗殺者
+Soma: 月神
+Orthos: 歐特魯斯
+Fang: 狼牙
+Tigris: 猛虎
+Vasto: 瓦斯托
+Cernos: 西諾斯
+Helios: 赫利俄斯
+Galatine: 迦倫提恩
+Dakra: 達克拉
+Fragor: 重擊巨錘
+Boar: 野豬
+Bronco: 野馬
+Akbronco: 野馬雙槍
+Dual_Kamas: 雙短柄戰鐮
+Lex: 雷克斯
+Aklex: 雷克斯雙槍
+Hikou: 飛揚

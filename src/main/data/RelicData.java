@@ -23,6 +23,14 @@ public class RelicData {
 		loadVaultedRelic();
 		loadAllRelic();
 		loadItemSet();
+		
+//		Test Output
+//		String[] arr = new String[mItemSet.keySet().size()];
+//		mItemSet.keySet().toArray(arr);
+//		Arrays.sort(arr);
+//		for (String s: arr) {
+//			log(s.replaceAll(" PRIME", "") + ": " + s.replaceAll(" PRIME", ""));
+//		}
 	}
 
 	private static void loadVaultedRelic() {

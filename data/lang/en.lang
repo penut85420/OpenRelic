@@ -3,9 +3,17 @@
 # Display on menu
 lang-name: English
 
+# Window title
+window-title: Open Relic
+
 # Menu title
 setting: Setting
+font-setting: Font Setting
 language: Language
+
+# Font-Setting window
+font: Font: 
+check: Check
 
 # Relic Viewer block
 relic-viewer: Relic Viewer
@@ -14,10 +22,11 @@ search-target: Target:
 search:  Search 
 clear:  Clear 
 update-instant: Instant
-formabp-display: FORMA BP
-forma: FORMA
+formabp-display: Forma BP
+forma: Forma
 vaulted-display: Vaulted
 
+# Relic Viewer
 relic: Relic
 relic-name: Relic Name
 item-name: Item Name
@@ -33,3 +42,89 @@ Axi: Axi
 common: Common
 uncommon: Uncommon
 rare: Rare
+
+#Item term
+PRIME: Prime
+Blueprint: BP
+FORMA: Forma
+
+Chassis: Chassis
+Systems: Systems
+Neuroptics: Neuroptics
+Harness: Harness
+Wings: Wings
+Barrel: Barrel
+Receiver: Receiver
+Stock: Stock
+Blade: Blade
+Hilt: Hilt
+Venka_PRIME_Blades: Venka Prime Blades
+Gauntlet: Gauntlet
+Handle: Handle
+Lower_Limb: Lower Limb
+Upper_Limb: Upper Limb
+Grip: Grip
+String: String
+Guard: Guard
+Disc: Disc
+Cerebrum: Cerebrum
+Carapace: Carapace
+Pouch: Pouch
+Head: Head
+Link: Link
+Stars: Stars
+Collar_Band: Collar Band
+Collar_Buckle: Collar Buckle
+Collar: Collar
+
+ASH: Ash
+BANSHEE: Banshee
+EMBER: Ember
+FROST: Frost
+MAG: Mag
+NEKROS: Nekros
+NOVA: Nova
+NYX: Nyx
+OBERON: Oberon
+ODONATA: Odonata
+SARYN: Saryn
+TRINITY: Trinity
+VALKYR: Valkyr
+VAUBAN: Vauban
+VOLT: Volt
+Burston: Burston
+Nikana: Nikana
+Venka: Venka
+Scindo: Scindo
+Akstiletto: Akstiletto
+Kavasa: Kavasa
+Vectis: Vectis
+Braton: Braton
+Paris: Paris
+Silva: Silva
+Aegis: Aegis
+Sybaris: Sybaris
+Euphona: Euphona
+Glaive: Glaive
+Latron: Latron
+Carrier: Carrier
+Reaper: Reaper
+Spira: Spira
+Sicarus: Sicarus
+Soma: Soma
+Orthos: Orthos
+Fang: Fang
+Tigris: Tigris
+Vasto: Vasto
+Cernos: Cernos
+Helios: Helios
+Galatine: Galatine
+Dakra: Dakra
+Fragor: Fragor
+Boar: Boar
+Bronco: Bronco
+Akbronco: Akbronco
+Dual_Kamas: Dual Kamas
+Lex: Lex
+Aklex: Aklex
+Hikou: Hikou

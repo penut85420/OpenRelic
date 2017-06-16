@@ -9,9 +9,13 @@ import javax.swing.plaf.*;
 
 import main.data.Lang;
 import main.frame.RelicViewer.RelicViewer;
+import main.res.Res;
 
 public class MainFrame extends JFrame implements SuperFrame {
 	private static final long serialVersionUID = 1L;
+	
+	public static MainFrame mFrame;
+	public static Font mGlobalFont;
 	
 	ArrayList<SuperFrame> mCtrlCenter = new ArrayList<>();
 	
@@ -32,23 +36,25 @@ public class MainFrame extends JFrame implements SuperFrame {
 	}
 
 	private void init() {
-		setTitle("Warframe Void Helper");
+		mFrame = this;
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setTitle(t("window-title"));
 		setSize(1280, 720);
+		setIconImage(Res.getIcon());
 		setLocationRelativeTo(null);
-		
 	}
 	
 	private void initUIManager() {
 		try {
 			UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
 			SwingUtilities.updateComponentTreeUI(this);
-			Font f = new Font("微軟正黑體", Font.PLAIN, 16);
+			mGlobalFont = new Font("細明體", Font.PLAIN, 12);
 			Enumeration<Object> keys = UIManager.getDefaults().keys();
 			while (keys.hasMoreElements()) {
 				Object key = keys.nextElement();
 				Object value = UIManager.get (key);
 				if (value != null && value instanceof FontUIResource)
-					UIManager.put(key, f);
+					UIManager.put(key, mGlobalFont);
 			}
 		} catch (Exception e) { e.printStackTrace(); }
 	}
@@ -66,7 +72,13 @@ public class MainFrame extends JFrame implements SuperFrame {
 		JMenuBar bar = new JMenuBar();
 		
 		JMenu menuSetting = new JMenu(t("setting"));
-		JMenuItem itemSetting = new JMenuItem(t("setting"));
+		JMenuItem itemSetting = new JMenuItem(t("font-setting"));
+		itemSetting.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new FontSetter(mFrame).setVisible(true);
+			}
+		});
 		menuSetting.add(itemSetting);
 		
 		JMenu menuLang = new JMenu(t("language"));
@@ -87,7 +99,7 @@ public class MainFrame extends JFrame implements SuperFrame {
 		setJMenuBar(bar);
 	}
 	
-	private void refreshAll() {
+	public void refreshAll() {
 		for (SuperFrame p: mCtrlCenter)
 			p.refresh();
 	}
@@ -98,6 +110,7 @@ public class MainFrame extends JFrame implements SuperFrame {
 
 	@Override
 	public void refresh() {
+		setTitle(t("window-title"));
 		mTabbedPane.setTitleAt(0, t("relic-viewer"));
 		initMenu();
 	}

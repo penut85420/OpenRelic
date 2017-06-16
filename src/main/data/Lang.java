@@ -22,7 +22,7 @@ public class Lang {
 				if (seg.indexOf(": ") < 0) continue;
 				
 				Integer splitIdx = seg.indexOf(": ");
-				String key = seg.substring(0, splitIdx);
+				String key = seg.substring(0, splitIdx).toLowerCase();
 				String value = seg.substring(splitIdx + 2);
 				mLang.get(lang).put(key, value);
 			}
@@ -45,6 +45,7 @@ public class Lang {
 	}
 	
 	public static String t(String key) {
+		key = key.toLowerCase();
 		if (mLang.get(Lang).get(key) == null)
 			return key;
 		return mLang.get(Lang).get(key);

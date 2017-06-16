@@ -11,6 +11,7 @@ import javax.swing.table.*;
 import java.util.*;
 
 import main.data.Lang;
+import main.frame.MainFrame;
 import main.frame.SuperFrame;
 
 public class RelicViewer extends JPanel implements SuperFrame {
@@ -135,9 +136,14 @@ public class RelicViewer extends JPanel implements SuperFrame {
 	}
 	
 	private void initObjArr() {
+		mObjFont.add(txtSearchTarget);
 		mObjFont.add(mSearchField);
 		mObjFont.add(mSearchButton);
+		mObjFont.add(mClearButton);
 		mObjFont.add(mRelicTable);
+		mObjFont.add(mInstantUpdate);
+		mObjFont.add(mDisplayForma);
+		mObjFont.add(mDisplayVaulted);
 		
 		mObjLang.put(txtSearchTarget, "search-target");
 		mObjLang.put(mSearchButton, "search");
@@ -157,6 +163,9 @@ public class RelicViewer extends JPanel implements SuperFrame {
 			else if (c instanceof JCheckBox)
 				((JCheckBox)c).setText(Lang.t(mObjLang.get(c)));
 		}
+		
+		for (JComponent c: mObjFont)
+			c.setFont(MainFrame.mGlobalFont);
 		mRelicViewerTableModel.refresh();
 	}
 	
