@@ -13,10 +13,10 @@ relic-viewer: Relic Viewer
 search-target: Target: 
 search:  Search 
 clear:  Clear 
-update-instant: Instant Update
-formabp-display: FORMA BP Display
+update-instant: Instant
+formabp-display: FORMA BP
 forma: FORMA
-vaulted-display: Vaulted Relic Display
+vaulted-display: Vaulted
 
 relic: Relic
 relic-name: Relic Name

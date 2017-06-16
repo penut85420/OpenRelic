@@ -27,18 +27,17 @@ public class RelicViewerTableModel extends AbstractTableModel {
 			for (String kkey: RelicData.mRelics.get(key).keySet()) {
 				VoidRelic vr = RelicData.mRelics.get(key).get(kkey);
 				for (ItemPart item: vr.getDropItemList()) {
-					boolean addFlag = false;
+					boolean addFlag = true;
 					
 					if (mFilter != null)
 						for (String search: mFilter.split(" ")) {
-							if (vr.getFullName().contains(search)
-							 || item.getName().contains(search)
-							 || vr.getRarity(item).contains(search)) {
-								addFlag = true;
-								break;
-							}
+							if (vr.getFullName().contains(search)) continue;
+							if (item.getName().contains(search)) continue;
+							if (vr.getRarity(item).contains(search)) continue;
+							
+							addFlag = false;
+							break;
 						}
-					else addFlag = true;
 					
 					if (!isDisplayForma && item.getName().contains(Lang.t("forma")))	
 						addFlag = false;

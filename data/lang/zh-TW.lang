@@ -14,9 +14,9 @@ search-target: 搜尋目標：
 search: 　搜尋　
 clear: 　清除　
 update-instant: 即時更新
-formabp-display: 顯示FORMA藍圖
+formabp-display: FORMA
 forma: FORMA
-vaulted-display: 顯示已入庫的遺物
+vaulted-display: 已入庫
 
 # 遺物總覽表格
 relic: 遺物

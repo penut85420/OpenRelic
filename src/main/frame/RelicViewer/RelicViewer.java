@@ -80,9 +80,10 @@ public class RelicViewer extends JPanel implements SuperFrame {
 			top1.add(mSearchField, BorderLayout.CENTER);
 			top1.add(top1_2, BorderLayout.EAST);
 			
-			JPanel top2 = new JPanel(new GridLayout(0, 2));
+			JPanel top2 = new JPanel(new GridLayout(0, 3));
 			top2.add(mInstantUpdate);
 			top2.add(mDisplayForma);
+			top2.add(mDisplayVaulted);
 
 		top.add(top1);
 		top.add(top2);
