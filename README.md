@@ -13,6 +13,8 @@
 希望可以做到即便我有一天也AFK了  
 也不怕沒有人做遺物統整給大家  
   
+Alpha Download: [Google Drive](http://goo.gl/KqJrbU)
+
 遺物相關資料與圖示版權歸屬Digital Extremes  
 如有侵權請告知  
   
