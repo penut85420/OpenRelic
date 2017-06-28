@@ -685,3 +685,35 @@ Hikou PRIME Pouch
 Braton PRIME Receiver
 Boar PRIME Barrel
 Vectis PRIME Stock
+
+Neo	B3
+FORMA Blueprint
+RHINO PRIME System Blueprint
+Boar PRIME Blueprint
+MAG PRIME Chassis Blueprint
+Dakra PRIME Blade
+Boltor PRIME Blueprint
+
+Meso	M1
+Ankyros PRIME Gauntlet
+Boltor PRIME Barrel
+Dakra PRIME Handle
+RHINO PRIME Chassis Blueprint
+Boar PRIME Barrel
+MAG PRIME Blueprint
+
+Lith	B1
+FORMA Blueprint
+MAG PRIME Neuroptics Blueprint
+Ankyros PRIME Blueprint
+RHINO PRIME Neuroptics Blueprint
+Boltor PRIME Receiver
+Boar PRIME Stock
+
+Axi	R1
+MAG PRIME System Blueprint
+Boltor PRIME Stock
+Boar PRIME Reaper
+Ankyros PRIME Blade
+Dakra PRIME Blueprint
+RHINO PRIME Blueprint
