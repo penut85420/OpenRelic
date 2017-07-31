@@ -13,9 +13,17 @@
 希望可以做到即便我有一天也AFK了  
 也不怕沒有人做遺物統整給大家  
   
-Release Download: [Release](https://goo.gl/UwUPwS)  
-Data Download: [Data Only](https://goo.gl/T3aiYG)  
-需要先安裝[Java JRE 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+***
+下載區  
+主程式 + 資料: [Release](https://goo.gl/UwUPwS)  
+只下載資料: [Data Only](https://goo.gl/T3aiYG)  
+  
+如何開啟?  
+需要先安裝 [Java JRE 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)  
+解壓縮完後點兩下 OpenRelic.bat 即可開啟  
+  
+如何更新資料?  
+下載資料後將壓縮檔的內容覆蓋 Data 資料夾即可
 
 遺物相關資料與圖示版權歸屬Digital Extremes  
 如有侵權請告知  
