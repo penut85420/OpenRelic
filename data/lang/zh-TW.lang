@@ -34,8 +34,8 @@ relic-name: 遺物名稱
 item-name: 部件名稱
 rarity: 稀有度
 
-# Relicording
-relicording: Relicording
+# 虛空倉管
+relicording: 虛空倉管
 target-itemset: 目標裝備
 choose-itemset: 選擇裝備
 delete: 刪除
