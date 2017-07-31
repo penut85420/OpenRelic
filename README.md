@@ -13,13 +13,18 @@
 希望可以做到即便我有一天也AFK了  
 也不怕沒有人做遺物統整給大家  
   
-Alpha Download: [Google Drive](http://goo.gl/KqJrbU)  
+Release Download: [Release](https://goo.gl/UwUPwS)  
+Data Download: [Data Only](https://goo.gl/T3aiYG)  
 需要先安裝[Java JRE 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 
 遺物相關資料與圖示版權歸屬Digital Extremes  
 如有侵權請告知  
   
 ***
+2017/07/31
++ 修正部分用詞與翻譯的錯誤
++ 增加獨立Data的載點
+
 2017/06/16
 + 完成遺物檢視表格的排序功能
 + 初步完成搜尋功能
