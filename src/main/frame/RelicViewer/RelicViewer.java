@@ -11,8 +11,7 @@ import javax.swing.table.*;
 import java.util.*;
 
 import main.data.Lang;
-import main.frame.MainFrame;
-import main.frame.SuperFrame;
+import main.frame.*;
 
 public class RelicViewer extends JPanel implements SuperFrame {
 	private static final long serialVersionUID = 1L;
@@ -28,9 +27,6 @@ public class RelicViewer extends JPanel implements SuperFrame {
 	JCheckBox mInstantUpdate;
 	JCheckBox mDisplayForma;
 	JCheckBox mDisplayVaulted;
-	
-	ArrayList<JComponent> mObjFont = new ArrayList<>();
-	HashMap<JComponent, String> mObjLang = new HashMap<>();
 	
 	public RelicViewer() {
 		init();
@@ -52,9 +48,6 @@ public class RelicViewer extends JPanel implements SuperFrame {
 		mDisplayForma = new JCheckBox(Lang.t("formabp-display"));
 		mDisplayVaulted = new JCheckBox(Lang.t("vaulted-display"));
 		
-		// Set lable's margin, left 10px
-		txtSearchTarget.setBorder(new EmptyBorder(0, 10, 0, 0));
-		
 		// Set init state
 		mInstantUpdate.setSelected(true);
 		mDisplayForma.setSelected(true);
@@ -64,13 +57,17 @@ public class RelicViewer extends JPanel implements SuperFrame {
 		mRelicViewerTableModel = new RelicViewerTableModel();
 		mRelicTable = new JTable(mRelicViewerTableModel);
 		mSorter = new TableRowSorter<RelicViewerTableModel>(mRelicViewerTableModel);
+		JScrollPane spRelicTable = new JScrollPane(mRelicTable);
+		
+		// Set margin
+		txtSearchTarget.setBorder(new EmptyBorder(0, 10, 0, 0));
 		
 		mSorter.setComparator(0, new RelicNameComparator());
 		mSorter.setComparator(2, new RarityComparator());
 		mRelicTable.getTableHeader().setReorderingAllowed(false);
 		mRelicTable.setRowSorter(mSorter);
 		
-		JPanel top = new JPanel(new GridLayout(0, 3));
+		JPanel top = new JPanel(new GridLayout(0, 2));
 		
 			JPanel top1 = new JPanel(new BorderLayout());
 				JPanel top1_2 = new JPanel(new GridLayout(0, 2));
@@ -90,7 +87,7 @@ public class RelicViewer extends JPanel implements SuperFrame {
 		top.add(top2);
 		
 		add(top, BorderLayout.NORTH);
-		add(new JScrollPane(mRelicTable), BorderLayout.CENTER);
+		add(spRelicTable, BorderLayout.CENTER);
 	}
 	
 	private void initEvent() {
@@ -136,36 +133,20 @@ public class RelicViewer extends JPanel implements SuperFrame {
 	}
 	
 	private void initObjArr() {
-		mObjFont.add(txtSearchTarget);
-		mObjFont.add(mSearchField);
-		mObjFont.add(mSearchButton);
-		mObjFont.add(mClearButton);
-		mObjFont.add(mRelicTable);
-		mObjFont.add(mInstantUpdate);
-		mObjFont.add(mDisplayForma);
-		mObjFont.add(mDisplayVaulted);
+		addObj(txtSearchTarget, "search-target");
+		addObj(mSearchButton, "search");
+		addObj(mClearButton, "clear");
+		addObj(mInstantUpdate,"update-instant");
+		addObj(mDisplayForma, "formabp-display");
+		addObj(mDisplayVaulted, "vaulted-display");
 		
-		mObjLang.put(txtSearchTarget, "search-target");
-		mObjLang.put(mSearchButton, "search");
-		mObjLang.put(mClearButton, "clear");
-		mObjLang.put(mInstantUpdate,"update-instant");
-		mObjLang.put(mDisplayForma, "formabp-display");
-		mObjLang.put(mDisplayVaulted, "vaulted-display");
+		addObj(mSearchField);
+		addObj(mRelicTable);
 	}
 
 	@Override
 	public void refresh() {
-		for (JComponent c: mObjLang.keySet()) {
-			if (c instanceof JLabel)
-				((JLabel)c).setText(Lang.t(mObjLang.get(c)));
-			else if (c instanceof JButton)
-				((JButton)c).setText(Lang.t(mObjLang.get(c)));
-			else if (c instanceof JCheckBox)
-				((JCheckBox)c).setText(Lang.t(mObjLang.get(c)));
-		}
-		
-		for (JComponent c: mObjFont)
-			c.setFont(MainFrame.mGlobalFont);
+		refreshDefault();
 		mRelicViewerTableModel.refresh();
 	}
 	

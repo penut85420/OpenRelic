@@ -8,7 +8,9 @@ import javax.swing.*;
 import javax.swing.plaf.*;
 
 import main.data.Lang;
+import main.dialog.AboutDev;
 import main.frame.RelicViewer.RelicViewer;
+import main.frame.Relicording.Relicording;
 import main.res.Res;
 
 public class MainFrame extends JFrame implements SuperFrame {
@@ -21,6 +23,7 @@ public class MainFrame extends JFrame implements SuperFrame {
 	
 	JTabbedPane mTabbedPane;
 	RelicViewer mRelicViewer;
+	Relicording mRelicording;
 	
 	public MainFrame() {
 		init();
@@ -33,13 +36,14 @@ public class MainFrame extends JFrame implements SuperFrame {
 	private void initCtrl() {
 		mCtrlCenter.add(this);
 		mCtrlCenter.add(mRelicViewer);
+		mCtrlCenter.add(mRelicording);
 	}
 
 	private void init() {
 		mFrame = this;
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setTitle(t("window-title"));
-		setSize(1280, 720);
+		setSize(900, 600);
 		setIconImage(Res.getIcon());
 		setLocationRelativeTo(null);
 	}
@@ -64,6 +68,9 @@ public class MainFrame extends JFrame implements SuperFrame {
 		
 		mRelicViewer = new RelicViewer();
 		mTabbedPane.addTab(t("relic-viewer"), mRelicViewer);
+		
+		mRelicording = new Relicording();
+		mTabbedPane.addTab(t("relicording"), mRelicording);
 		
 		add(mTabbedPane);
 	}
@@ -94,8 +101,19 @@ public class MainFrame extends JFrame implements SuperFrame {
 			menuLang.add(item);
 		}
 		
+		JMenu menuAbout = new JMenu(t("about"));
+		JMenuItem itemAboutDev = new JMenuItem(t("about-dev")); 
+		itemAboutDev.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new AboutDev(mFrame).setVisible(true);
+			}
+		});
+		menuAbout.add(itemAboutDev);
+		
 		bar.add(menuSetting);
 		bar.add(menuLang);
+		bar.add(menuAbout);
 		setJMenuBar(bar);
 	}
 	

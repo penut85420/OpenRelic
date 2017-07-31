@@ -10,6 +10,8 @@ window-title: Open Relic 開源遺物
 setting: 設定
 font-setting: 設定字型
 language: 語言
+about: 關於
+about-dev: 開發
 
 # 字型設定視窗
 font: 字型：
@@ -31,6 +33,15 @@ relic: 遺物
 relic-name: 遺物名稱
 item-name: 部件名稱
 rarity: 稀有度
+
+# Relicording
+relicording: Relicording
+target-itemset: 目標裝備
+choose-itemset: 選擇裝備
+delete: 刪除
+
+# 選擇裝備
+itemset-chooser: 選擇裝備
 
 # 遺物用語
 Lith: 古紀

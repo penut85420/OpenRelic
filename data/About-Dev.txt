@@ -1,0 +1,8 @@
+﻿<html><center>
+程式開發: Alex Yang, Penut Chen<br>
+資料彙整: GragHIO, Sheng-Yang Su<br>
+<br>
+特別感謝:<br>
+Nyx Prime<br>
+Iron Cat<br>
+</center></html>

@@ -10,6 +10,8 @@ window-title: Open Relic
 setting: Setting
 font-setting: Font Setting
 language: Language
+about: About
+about-dev: About Developer
 
 # Font-Setting window
 font: Font: 
@@ -31,6 +33,15 @@ relic: Relic
 relic-name: Relic Name
 item-name: Item Name
 rarity: Rarity
+
+# Relicording block
+relicording: Relicording
+target-itemset: Target
+choose-itemset: Choose
+delete: Delete
+
+# Item Set Chooser
+itemset-chooser: Item Set Chooser
 
 # Relic term
 Lith: Lith
