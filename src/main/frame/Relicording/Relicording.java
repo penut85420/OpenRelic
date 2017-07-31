@@ -1,10 +1,15 @@
 package main.frame.Relicording;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
 import main.data.Lang;
+import main.data.dataType.ItemSet;
+import main.dialog.ItemSetChooser;
 import main.frame.SuperFrame;
 
 public class Relicording extends JPanel implements SuperFrame {
@@ -20,6 +25,7 @@ public class Relicording extends JPanel implements SuperFrame {
 	public Relicording() {
 		init();
 		initGUI();
+		initEvent();
 		initObjectArr();
 	}
 
@@ -51,6 +57,23 @@ public class Relicording extends JPanel implements SuperFrame {
 		
 		add(pLeft, BorderLayout.WEST);
 		add(spRelicording, BorderLayout.CENTER);
+	}
+	
+	private void initEvent() {
+		mChoose.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				ItemSetChooser isc = new ItemSetChooser();
+				isc.setVisible(true);
+				
+				if (isc.getOption() == ItemSetChooser.OPTION_CHECK) {
+					ItemSet[] itemSets = isc.getSelectedItemSets();
+					for (ItemSet is: itemSets)
+						System.out.println(is);
+				}
+			}
+		});
 	}
 	
 	private void initObjectArr() {

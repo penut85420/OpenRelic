@@ -39,6 +39,7 @@ relicording: Relicording
 target-itemset: Target
 choose-itemset: Choose
 delete: Delete
+cancel: Cancel
 
 # Item Set Chooser
 itemset-chooser: Item Set Chooser

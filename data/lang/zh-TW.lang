@@ -39,6 +39,7 @@ relicording: 虛空倉管
 target-itemset: 目標裝備
 choose-itemset: 選擇裝備
 delete: 刪除
+cancel: 取消
 
 # 選擇裝備
 itemset-chooser: 選擇裝備

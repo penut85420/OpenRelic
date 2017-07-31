@@ -148,6 +148,12 @@ public class RelicViewer extends JPanel implements SuperFrame {
 	public void refresh() {
 		refreshDefault();
 		mRelicViewerTableModel.refresh();
+		
+		String[] colsName = new String[]{Lang.t("relic-name"), Lang.t("item-name"), Lang.t("rarity")};
+		for (int i = 0; i < colsName.length; i++)
+			mRelicTable.getColumnModel().getColumn(i).setHeaderValue(colsName[i]);
+		
+		mRelicTable.repaint();
 	}
 	
 	class RelicNameComparator implements Comparator<String> {

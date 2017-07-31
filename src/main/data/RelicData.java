@@ -80,14 +80,15 @@ public class RelicData {
 		String preSet = "";
 		ItemSet tmpSet = null;
 		for (String i: item) {
-			if (i.equals("FORMA �Ź�")) continue;
-			
+			if (i.startsWith("FORMA")) continue;
+
 			String nowSet = i.substring(0, i.indexOf("PRIME") + 5);
 			if (!preSet.equals(nowSet)) {
 				tmpSet = new ItemSet(nowSet);
 				mItemSet.put(nowSet, tmpSet);
 				preSet = nowSet;
 			}
+			
 			if (mItemPart.get(i) == null)
 				log("Not found: " + i);
 			tmpSet.addItem(mItemPart.get(i));

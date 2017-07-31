@@ -35,6 +35,7 @@ public class AboutDev extends JDialog {
 		setTitle(Lang.t("about-dev"));
 		setSize(400, 300);
 		setLocationRelativeTo(null);
+		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout());
 	}
 }
