@@ -688,7 +688,7 @@ Vectis PRIME Stock
 
 Neo	B3
 FORMA Blueprint
-RHINO PRIME System Blueprint
+RHINO PRIME Systems Blueprint
 Boar PRIME Blueprint
 MAG PRIME Chassis Blueprint
 Dakra PRIME Blade
@@ -711,9 +711,9 @@ Boltor PRIME Receiver
 Boar PRIME Stock
 
 Axi	R1
-MAG PRIME System Blueprint
+MAG PRIME Systems Blueprint
 Boltor PRIME Stock
-Boar PRIME Reaper
+Boar PRIME Receiver
 Ankyros PRIME Blade
 Dakra PRIME Blueprint
 RHINO PRIME Blueprint
