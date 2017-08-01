@@ -18,6 +18,10 @@ about-dev: About Developer
 font: Font: 
 check: Check
 
+# Language Editor
+add-lang: Add Language
+delete-lang: Delete Language
+
 # Relic Viewer block
 relic-viewer: Relic Viewer
 

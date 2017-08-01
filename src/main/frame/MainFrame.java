@@ -9,6 +9,7 @@ import javax.swing.plaf.*;
 
 import main.Data.Lang;
 import main.Dialog.AboutDev;
+import main.Dialog.LangEditor.LangEditor;
 import main.Frame.RelicViewer.RelicViewer;
 import main.Frame.Relicording.Relicording;
 import main.Res.Res;
@@ -121,6 +122,13 @@ public class MainFrame extends JFrame implements SuperFrame {
 		menuLang.add(new JMenuBar());
 		JMenuItem itemLangEditor = new JMenuItem(t("lang-editor"));
 		menuLang.add(itemLangEditor);
+		itemLangEditor.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new LangEditor().setVisible(true);
+			}
+		});
 		
 		JMenu menuAbout = new JMenu(t("about"));
 		JMenuItem itemAboutDev = new JMenuItem(t("about-dev")); 
