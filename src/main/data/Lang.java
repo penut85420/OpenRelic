@@ -1,8 +1,8 @@
-package main.data;
+package main.Data;
 
 import java.util.*;
 
-import main.library.LibraryIO;
+import main.Library.LibraryIO;
 
 public class Lang {
 	final static String LangFolder = "data\\lang\\";

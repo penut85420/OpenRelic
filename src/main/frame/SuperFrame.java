@@ -1,10 +1,10 @@
-package main.frame;
+package main.Frame;
 
 import java.util.*;
 
 import javax.swing.*;
 
-import main.data.Lang;
+import main.Data.Lang;
 
 public interface SuperFrame {
 	ArrayList<JComponent> mObjFont = new ArrayList<>();

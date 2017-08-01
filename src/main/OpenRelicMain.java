@@ -1,7 +1,7 @@
 package main;
 
-import main.data.*;
-import main.frame.MainFrame;
+import main.Data.*;
+import main.Frame.MainFrame;
 
 public class OpenRelicMain {
 	public static void main(String[] args) {

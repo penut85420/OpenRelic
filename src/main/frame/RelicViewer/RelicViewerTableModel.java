@@ -1,10 +1,11 @@
-package main.frame.RelicViewer;
+package main.Frame.RelicViewer;
 
 import java.util.*;
 
 import javax.swing.table.*;
-import main.data.*;
-import main.data.dataType.*;
+
+import main.Data.*;
+import main.Data.DataType.*;
 
 public class RelicViewerTableModel extends AbstractTableModel {
 	private static final long serialVersionUID = 1L;

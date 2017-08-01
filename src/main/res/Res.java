@@ -1,4 +1,4 @@
-package main.res;
+package main.Res;
 
 import java.awt.Image;
 

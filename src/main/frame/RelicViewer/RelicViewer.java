@@ -1,4 +1,4 @@
-package main.frame.RelicViewer;
+package main.Frame.RelicViewer;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -10,8 +10,8 @@ import javax.swing.table.*;
 
 import java.util.*;
 
-import main.data.Lang;
-import main.frame.*;
+import main.Data.Lang;
+import main.Frame.*;
 
 public class RelicViewer extends JPanel implements SuperFrame {
 	private static final long serialVersionUID = 1L;

@@ -1,4 +1,4 @@
-package main.library;
+package main.Library;
 
 import java.io.*;
 

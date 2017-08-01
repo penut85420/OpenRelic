@@ -1,4 +1,4 @@
-package main.frame;
+package main.Frame;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -7,11 +7,11 @@ import java.util.*;
 import javax.swing.*;
 import javax.swing.plaf.*;
 
-import main.data.Lang;
-import main.dialog.AboutDev;
-import main.frame.RelicViewer.RelicViewer;
-import main.frame.Relicording.Relicording;
-import main.res.Res;
+import main.Data.Lang;
+import main.Dialog.AboutDev;
+import main.Frame.RelicViewer.RelicViewer;
+import main.Frame.Relicording.Relicording;
+import main.Res.Res;
 
 public class MainFrame extends JFrame implements SuperFrame {
 	private static final long serialVersionUID = 1L;
@@ -118,6 +118,9 @@ public class MainFrame extends JFrame implements SuperFrame {
 			});
 			menuLang.add(item);
 		}
+		menuLang.add(new JMenuBar());
+		JMenuItem itemLangEditor = new JMenuItem(t("lang-editor"));
+		menuLang.add(itemLangEditor);
 		
 		JMenu menuAbout = new JMenu(t("about"));
 		JMenuItem itemAboutDev = new JMenuItem(t("about-dev")); 

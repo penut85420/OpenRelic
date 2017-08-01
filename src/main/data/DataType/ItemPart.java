@@ -1,8 +1,8 @@
-package main.data.dataType;
+package main.Data.DataType;
 
 import java.util.ArrayList;
 
-import main.data.Lang;
+import main.Data.Lang;
 
 public class ItemPart {	
 	String mName;

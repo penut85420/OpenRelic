@@ -1,12 +1,12 @@
-package main.frame.Relicording;
+package main.Frame.Relicording;
 
 import java.util.*;
 
 import javax.swing.*;
 
-import main.data.RelicData;
-import main.data.dataType.ItemSet;
-import main.library.LibraryIO;
+import main.Data.RelicData;
+import main.Data.DataType.ItemSet;
+import main.Library.LibraryIO;
 
 public class WishListModel extends AbstractListModel<String> {
 	public static final String WISHLIST_PATH = "user/wlist.dat";

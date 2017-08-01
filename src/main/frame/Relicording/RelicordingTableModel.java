@@ -1,9 +1,9 @@
-package main.frame.Relicording;
+package main.Frame.Relicording;
 
 import javax.swing.table.*;
 
-import main.data.Lang;
-import main.data.dataType.ItemSet;
+import main.Data.Lang;
+import main.Data.DataType.ItemSet;
 
 public class RelicordingTableModel extends AbstractTableModel {
 	

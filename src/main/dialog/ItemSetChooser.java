@@ -1,17 +1,14 @@
-package main.dialog;
+package main.Dialog;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 import java.util.*;
 
 import javax.swing.*;
 
-import main.data.*;
-import main.data.dataType.*;
-import main.frame.MainFrame;
+import main.Data.*;
+import main.Data.DataType.*;
+import main.Frame.MainFrame;
 
 public class ItemSetChooser extends JDialog {
 	

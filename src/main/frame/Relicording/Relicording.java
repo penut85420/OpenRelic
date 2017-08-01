@@ -1,4 +1,4 @@
-package main.frame.Relicording;
+package main.Frame.Relicording;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -7,12 +7,12 @@ import java.util.*;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
-import main.data.Lang;
-import main.data.RelicData;
-import main.data.dataType.ItemSet;
-import main.dialog.ItemSetChooser;
-import main.frame.SuperFrame;
-import main.library.LibraryIO;
+import main.Data.Lang;
+import main.Data.RelicData;
+import main.Data.DataType.ItemSet;
+import main.Dialog.ItemSetChooser;
+import main.Frame.SuperFrame;
+import main.Library.LibraryIO;
 
 public class Relicording extends JPanel implements SuperFrame {
 	

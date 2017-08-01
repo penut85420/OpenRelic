@@ -1,4 +1,4 @@
-package main.frame;
+package main.Frame;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-import main.data.Lang;
+import main.Data.Lang;
 
 public class FontSetter extends JDialog {
 	private static final long serialVersionUID = 1L;

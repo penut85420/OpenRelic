@@ -1,4 +1,4 @@
-package main.dialog;
+package main.Dialog;
 
 import java.awt.*;
 import java.io.File;
@@ -6,9 +6,9 @@ import java.io.File;
 import javax.swing.*;
 import javax.swing.border.*;
 
-import main.data.Lang;
-import main.library.LibraryIO;
-import main.res.Res;
+import main.Data.Lang;
+import main.Library.LibraryIO;
+import main.Res.Res;
 
 public class AboutDev extends JDialog {
 	public AboutDev(Window window) {

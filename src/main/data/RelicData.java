@@ -1,9 +1,9 @@
-package main.data;
+package main.Data;
 
 import java.util.*;
 
-import main.data.dataType.*;
-import main.library.*;
+import main.Data.DataType.*;
+import main.Library.*;
 
 public class RelicData {
 	final static String Spliter = "\r\n\r\n";
