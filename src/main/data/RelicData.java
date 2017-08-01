@@ -58,7 +58,9 @@ public class RelicData {
 			for (int i = 1; i < line.length; i++) {
 				if (mItemPart.get(line[i]) == null)
 					mItemPart.put(line[i], new ItemPart(line[i]));
-				vr.addItem(mItemPart.get(line[i]));
+				ItemPart ip = mItemPart.get(line[i]);
+				vr.addItem(ip);
+				ip.addRelic(vr);
 			}
 			
 			if (mVaultedRelics.get(vr.getRawEra()).get(vr.getCode()) == null) {
@@ -86,6 +88,7 @@ public class RelicData {
 			if (!preSet.equals(nowSet)) {
 				tmpSet = new ItemSet(nowSet);
 				mItemSet.put(nowSet, tmpSet);
+				tmpSet.setKeyName(nowSet);
 				preSet = nowSet;
 			}
 			

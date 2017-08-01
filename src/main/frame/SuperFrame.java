@@ -11,6 +11,7 @@ public interface SuperFrame {
 	HashMap<JComponent, String> mObjLang = new HashMap<>();
 	
 	public void refresh();
+	public void onClose();
 	
 	default public void refreshDefault() {
 		for (JComponent c: mObjLang.keySet()) {

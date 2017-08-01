@@ -1,13 +1,34 @@
 package main.data.dataType;
 
+import java.util.ArrayList;
+
 import main.data.Lang;
 
 public class ItemPart {	
 	String mName;
 	int mDucats;
+	ArrayList<VoidRelic> mSourceRelic;
 	
 	public ItemPart(String name) {
 		mName = name;
+		mSourceRelic = new ArrayList<>();
+	}
+	
+	public void addRelic(VoidRelic vr) {
+		mSourceRelic.add(vr);
+	}
+	
+	public String getSourceRelic(boolean vaultedRequire) {
+		String vaulted = "";
+		String unvaulted = "";
+		
+		for (VoidRelic vr: mSourceRelic) {
+			if (vr.isVaulted())
+				vaulted += vr.getFullName() + " ";
+			else unvaulted += vr.getFullName() + " ";
+		}
+		if (vaultedRequire) return unvaulted + vaulted;
+		return unvaulted;
 	}
 	
 	public String getName() {
@@ -24,6 +45,10 @@ public class ItemPart {
 	}
 	
 	public String toString() {
+		return getName();
+	}
+	
+	public String getInfo() {
 		return "Item Part Name: " + mName;
 	}
 }

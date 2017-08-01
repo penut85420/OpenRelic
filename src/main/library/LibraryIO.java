@@ -9,6 +9,7 @@ public class LibraryIO {
 	
 	public static String readFile(String file) {
 		try {
+			if (!new File(file).exists()) return null;
 			FileInputStream fin = new FileInputStream(file);
 			byte ba[] = new byte[fin.available()];
             fin.read(ba);
@@ -16,8 +17,10 @@ public class LibraryIO {
             s = s.replace("\uFEFF", "");
             fin.close();
             return s;
-		} catch(IOException e) { e.printStackTrace(); }
-		return null;
+		} catch (IOException e) { 
+			e.printStackTrace();
+			return null;
+		}
 	}
 	
 	public static void writeFile(String file, String content) {
@@ -26,6 +29,8 @@ public class LibraryIO {
 	
 	public static void writeFile(File file, String content) {
 		try {
+			if (!file.exists()) 
+				file.getParentFile().mkdir();
 			FileOutputStream fout = new FileOutputStream(file);
 			fout.write(new String("\uFEFF" + content).getBytes("UTF-8"));
 			fout.close();

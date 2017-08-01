@@ -40,6 +40,10 @@ target-itemset: 目標裝備
 choose-itemset: 選擇裝備
 delete: 刪除
 cancel: 取消
+already-get: 已取得
+itempart-name: 部件名稱
+source-relic: 來源遺物
+show-vaulted: 來源顯示已入庫的遺物
 
 # 選擇裝備
 itemset-chooser: 選擇裝備

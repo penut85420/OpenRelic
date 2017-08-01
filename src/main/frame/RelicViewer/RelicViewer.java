@@ -149,9 +149,9 @@ public class RelicViewer extends JPanel implements SuperFrame {
 		refreshDefault();
 		mRelicViewerTableModel.refresh();
 		
-		String[] colsName = new String[]{Lang.t("relic-name"), Lang.t("item-name"), Lang.t("rarity")};
-		for (int i = 0; i < colsName.length; i++)
-			mRelicTable.getColumnModel().getColumn(i).setHeaderValue(colsName[i]);
+		for (int i = 0; i < mRelicViewerTableModel.getColumnCount(); i++)
+			mRelicTable.getColumnModel().getColumn(i)
+				.setHeaderValue(mRelicViewerTableModel.getColumnName(i));
 		
 		mRelicTable.repaint();
 	}
@@ -189,5 +189,10 @@ public class RelicViewer extends JPanel implements SuperFrame {
 			if (s.equals(Lang.t("rare"))) return 2;
 			return 3;
 		}
+	}
+
+	@Override
+	public void onClose() {
+		// Do nothing now
 	}
 }

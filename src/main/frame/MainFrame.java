@@ -30,6 +30,7 @@ public class MainFrame extends JFrame implements SuperFrame {
 		initUIManager();
 		initMenu();
 		initGUI();
+		initEvent();
 		initCtrl();
 	}
 
@@ -73,6 +74,23 @@ public class MainFrame extends JFrame implements SuperFrame {
 		mTabbedPane.addTab(t("relicording"), mRelicording);
 		
 		add(mTabbedPane);
+	}
+	
+	private void initEvent() {
+		mFrame.addWindowListener(new WindowListener() {
+
+			@Override
+			public void windowClosing(WindowEvent e) {
+				onClose();
+			}
+			
+			public void windowActivated(WindowEvent e) { }
+			public void windowClosed(WindowEvent e) { }
+			public void windowDeactivated(WindowEvent e) { }
+			public void windowDeiconified(WindowEvent e) { }
+			public void windowIconified(WindowEvent e) { }
+			public void windowOpened(WindowEvent e) { }
+		});
 	}
 	
 	private void initMenu() {
@@ -130,6 +148,13 @@ public class MainFrame extends JFrame implements SuperFrame {
 	public void refresh() {
 		setTitle(t("window-title"));
 		mTabbedPane.setTitleAt(0, t("relic-viewer"));
+		mTabbedPane.setTitleAt(1, t("relicording"));
 		initMenu();
+	}
+
+	@Override
+	public void onClose() {
+		mRelicViewer.onClose();
+		mRelicording.onClose();
 	}
 }

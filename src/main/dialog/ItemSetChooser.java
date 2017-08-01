@@ -3,6 +3,8 @@ package main.dialog;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.*;
 
 import javax.swing.*;
@@ -61,12 +63,25 @@ public class ItemSetChooser extends JDialog {
 	}
 	
 	private void initEvent() {
+		mItemSetList.addMouseListener(new MouseListener() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if (e.getClickCount() == 2) {
+					dialogCheck();
+				}
+			}
+			
+			public void mouseReleased(MouseEvent e) { }
+			public void mousePressed(MouseEvent e) { }
+			public void mouseExited(MouseEvent e) { }
+			public void mouseEntered(MouseEvent e) { }
+		});
+		
 		mCheck.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				mOption = OPTION_CHECK;
-				setVisible(false);
+				dialogCheck();
 			}
 		});
 		
@@ -74,11 +89,24 @@ public class ItemSetChooser extends JDialog {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				mOption = OPTION_CANCEL;
-				setVisible(false);
+				dialogCancel();
 			}
 		});
 	}
+	
+	private void dialogCheck() {
+		mOption = OPTION_CHECK;
+		hideDialog();
+	}
+	
+	private void dialogCancel() {
+		mOption = OPTION_CANCEL;
+		hideDialog();
+	}
+	
+	public void showDialog() { setVisible(true); }
+	
+	public void hideDialog() { setVisible(false); }
 	
 	public int getOption() {
 		return mOption;
@@ -118,7 +146,7 @@ public class ItemSetChooser extends JDialog {
 			ItemSet[] itemsets = new ItemSet[selects.length];
 			
 			for (int i = 0; i < selects.length; i++)
-				itemsets[i] = RelicData.mItemSet.get(mItemSetName.get(mDisplayName.get(i)));
+				itemsets[i] = RelicData.mItemSet.get(mItemSetName.get(mDisplayName.get(selects[i])));
 			
 			return itemsets;
 		}

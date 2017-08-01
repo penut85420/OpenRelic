@@ -40,6 +40,10 @@ target-itemset: Target
 choose-itemset: Choose
 delete: Delete
 cancel: Cancel
+already-get: Get
+itempart-name: Item Part Name
+source-relic: Source Relic
+show-vaulted: Show Vaulted Source Relics
 
 # Item Set Chooser
 itemset-chooser: Item Set Chooser

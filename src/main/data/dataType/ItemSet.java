@@ -6,6 +6,7 @@ import main.data.Lang;
 
 public class ItemSet {
 	String mItemName;
+	String mKeyName;
 	ArrayList<ItemPart> mItemPartList = new ArrayList<>();
 	
 	public ItemSet(String name) {
@@ -14,6 +15,22 @@ public class ItemSet {
 	
 	public void addItem(ItemPart item) {
 		mItemPartList.add(item);
+	}
+	
+	public ItemPart getItemPart(int i) {
+		return mItemPartList.get(i);
+	}
+	
+	public void setKeyName(String s) {
+		mKeyName = s;
+	}
+	
+	public String getKeyName() {
+		return mKeyName;
+	}
+	
+	public int getItemCount() {
+		return mItemPartList.size();
 	}
 	
 	public String toString() {
