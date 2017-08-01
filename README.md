@@ -16,7 +16,7 @@
 ***
 ## 下載區  
 主程式 + 資料: [Release_Alpha_v1.1.0](https://goo.gl/BcpJ6r)  
-只下載資料: [Data Only](https://goo.gl/T3aiYG)  
+只下載資料: [Data U21.0.2](https://goo.gl/cHWJTw)  
   
 ### 如何開啟?  
 需要先安裝 [Java JRE 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)  
@@ -35,7 +35,8 @@
   
 修正  
 + 修正改變語言時，遺物總覽的表格標題不會改變的問題
-  
++ 暫時將Data縮減，只留目前需要的資料就好
+   
 ***
 2017/07/31  
 新增  
