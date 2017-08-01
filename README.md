@@ -15,7 +15,7 @@
   
 ***
 ## 下載區  
-主程式 + 資料: [Release](https://goo.gl/UwUPwS)  
+主程式 + 資料: [Release_Alpha_v1.1.0](https://goo.gl/BcpJ6r)  
 只下載資料: [Data Only](https://goo.gl/T3aiYG)  
   
 ### 如何開啟?  
