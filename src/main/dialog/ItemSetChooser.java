@@ -5,6 +5,8 @@ import java.awt.event.*;
 import java.util.*;
 
 import javax.swing.*;
+import javax.swing.event.CaretEvent;
+import javax.swing.event.CaretListener;
 
 import main.Data.*;
 import main.Data.DataType.*;
@@ -89,6 +91,14 @@ public class ItemSetChooser extends JDialog {
 				dialogCancel();
 			}
 		});
+		
+		mSearchText.addCaretListener(new CaretListener() {
+			
+			@Override
+			public void caretUpdate(CaretEvent e) {
+				mItemSetListModel.setSearchTarget(mSearchText.getText());
+			}
+		});
 	}
 	
 	private void dialogCheck() {
@@ -116,6 +126,7 @@ public class ItemSetChooser extends JDialog {
 	class ItemSetListModel extends AbstractListModel<String> {
 		HashMap<String, String> mItemSetName;
 		ArrayList<String> mDisplayName;
+		ArrayList<String> mOrgList;
 		
 		public ItemSetListModel() {
 			mItemSetName = new HashMap<>();
@@ -124,8 +135,9 @@ public class ItemSetChooser extends JDialog {
 				mItemSetName.put(i.toString(), key);
 			}
 			
-			mDisplayName = new ArrayList<>(mItemSetName.keySet());
-			Collections.sort(mDisplayName);
+			mOrgList = new ArrayList<>(mItemSetName.keySet());
+			Collections.sort(mOrgList);
+			mDisplayName = mOrgList;
 		}
 		
 		@Override
@@ -135,7 +147,7 @@ public class ItemSetChooser extends JDialog {
 
 		@Override
 		public int getSize() {
-			return RelicData.mItemSet.size();
+			return mDisplayName.size();
 		}
 		
 		public ItemSet[] getSelectedItemSets() {
@@ -146,6 +158,18 @@ public class ItemSetChooser extends JDialog {
 				itemsets[i] = RelicData.mItemSet.get(mItemSetName.get(mDisplayName.get(selects[i])));
 			
 			return itemsets;
+		}
+		
+		public void setSearchTarget(String search) {
+			if (search.trim().isEmpty())
+				mDisplayName = mOrgList;
+			else {
+				mDisplayName = new ArrayList<>();
+				for (String s: mOrgList)
+					if (s.contains(search))
+						mDisplayName.add(s);
+			}
+			repaint();
 		}
 	}
 }
