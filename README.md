@@ -15,14 +15,15 @@
   
 ***
 ## 下載區  
-主程式 + 資料: [Release_Alpha_v1.1.0](https://goo.gl/BcpJ6r)  
-只下載資料: [Data U21.0.2](https://goo.gl/cHWJTw)  
+主程式 + 資料: [Release_Alpha_v1.1.1](https://goo.gl/D4naHB)  
+只下載資料: [Data U21.1.0](https://goo.gl/DaHV4y)  
   
 ### 如何開啟?  
 需要先安裝 [Java JRE 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)  
 解壓縮完後點兩下 `OpenRelic.bat` 即可開啟  
   
 ### 如何更新資料?  
+在此之前，你可能會需要解壓縮的工具 [7-Zip](http://www.7-zip.org/)
 下載資料後將壓縮檔的內容覆蓋 `Data` 資料夾即可
 
 遺物相關資料與圖示版權歸屬Digital Extremes  
