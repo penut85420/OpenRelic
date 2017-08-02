@@ -15,7 +15,7 @@
   
 ***
 ## 下載區  
-主程式 + 資料: [Release_Alpha_v1.1.2](https://goo.gl/TZGBTT)  
+主程式 + 資料: [Release Alpha v1.1.3](https://goo.gl/n5a8NF)  
 只下載資料: [Data U21.1.0](https://goo.gl/DaHV4y)  
   
 ### 如何開啟?  
