@@ -128,8 +128,14 @@ public class Relicording extends JPanel implements SuperFrame {
 
 			public void mouseEntered(MouseEvent e) { }
 			public void mouseExited(MouseEvent e) { }
-			public void mousePressed(MouseEvent e) { }
-			public void mouseReleased(MouseEvent e) { }
+			
+			public void mousePressed(MouseEvent e) { 
+				setDisplayItem();
+			}
+			
+			public void mouseReleased(MouseEvent e) {
+				setDisplayItem();
+			}
 		});
 		
 		mShowVaulted.addActionListener(new ActionListener() {
