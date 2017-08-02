@@ -26,11 +26,14 @@ public class WishListModel extends AbstractListModel<String> {
 	
 	public void loadState() {
 		String raw = LibraryIO.readFile(WISHLIST_PATH);
-		if (raw == null) return ;
+		if (raw == null || raw.isEmpty()) return ;
 		
 		String[] content = raw.split("\n");
-		for (String s: content)
-			mWishList.add(RelicData.mItemSet.get(s));
+		for (String s: content) {
+			ItemSet i = RelicData.mItemSet.get(s);
+			if (i != null)
+				mWishList.add(i);
+		}
 	}
 	
 	public void addItem(ItemSet i) { mWishList.add(i); }

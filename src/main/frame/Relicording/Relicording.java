@@ -181,6 +181,7 @@ public class Relicording extends JPanel implements SuperFrame {
 		String content = "";
 		for (ItemSet i: mItemCheck.keySet()) {
 			content += i.getKeyName() + "\t";
+			
 			for (Boolean b: mItemCheck.get(i))
 				content += b.toString() + "\t";
 			content += "\n";
@@ -191,7 +192,7 @@ public class Relicording extends JPanel implements SuperFrame {
 	
 	public void loadState() {
 		String raw = LibraryIO.readFile(STATE_PATH);
-		if (raw == null) return ;
+		if (raw == null || raw.isEmpty()) return ;
 		
 		String[] content = raw.split("\n");
 		
