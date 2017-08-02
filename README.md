@@ -23,7 +23,7 @@
 解壓縮完後點兩下 `OpenRelic.bat` 即可開啟  
   
 ### 如何更新資料?  
-在此之前，你可能會需要解壓縮的工具 [7-Zip](http://www.7-zip.org/)
+在此之前，你可能會需要解壓縮的工具 [7-Zip](http://www.7-zip.org/)  
 下載資料後將壓縮檔的內容覆蓋 `Data` 資料夾即可
 
 遺物相關資料與圖示版權歸屬Digital Extremes  
