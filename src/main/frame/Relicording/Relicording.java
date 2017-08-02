@@ -55,7 +55,6 @@ public class Relicording extends JPanel implements SuperFrame {
 		mChoose = new JButton(Lang.t("choose-itemset"));
 		mDelete = new JButton(Lang.t("delete"));
 		mShowVaulted = new JCheckBox(Lang.t("show-vaulted"));
-		
 		t1 = new JLabel(Lang.t("target-itemset"));
 		JScrollPane spItemList = new JScrollPane(mWishList);
 		JScrollPane spRelicording = new JScrollPane(mRelicording);
@@ -65,6 +64,7 @@ public class Relicording extends JPanel implements SuperFrame {
 		
 		mRelicording.getColumnModel().getColumn(0).setMaxWidth(50);
 		mRelicording.getTableHeader().setReorderingAllowed(false);
+		mRelicording.getColumnModel().getColumn(0).setCellRenderer(new RelicordingTableRenderer());
 		
 		JPanel pLeft = new JPanel(new BorderLayout());
 			JPanel pLeftBottom = new JPanel(new GridLayout(0, 2));
