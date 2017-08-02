@@ -1,4 +1,7 @@
 *.class
+*.flag
+
 /bin/
-user/
-debug
+/baked/
+/wiki/
+/user/
