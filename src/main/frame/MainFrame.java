@@ -119,9 +119,15 @@ public class MainFrame extends JFrame implements SuperFrame {
 			});
 			menuLang.add(item);
 		}
-		menuLang.add(new JMenuBar());
+
 		JMenuItem itemLangEditor = new JMenuItem(t("lang-editor"));
-		menuLang.add(itemLangEditor);
+		
+		 
+//		TODO: Temporarily disable in release version
+//		menuLang.add(new JMenuBar());
+//		menuLang.add(itemLangEditor);
+		 
+		
 		itemLangEditor.addActionListener(new ActionListener() {
 			
 			@Override
