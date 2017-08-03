@@ -17,6 +17,14 @@ about-dev: 開發
 # 字型設定視窗
 font: 字型：
 check: 確定
+font-style: 字型樣式：
+font-size: 字型大小：
+example: 範例
+example-text: 範例文字 123 ABC
+font-plain: 標準
+font-bold: 粗體
+font-italic: 斜體
+font-bold+italic: 粗斜體
 
 # Language Editor
 add-lang: 新增語言

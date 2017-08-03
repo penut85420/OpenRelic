@@ -17,7 +17,7 @@ public class OpenRelicMain {
 	}
 	
 	private static void setLog() throws FileNotFoundException {
-		if (new File("debug").exists()) return ;
+		if (new File("debug.flag").exists()) return ;
 		String path = String.format("error%d.log", System.currentTimeMillis());
 		PrintStream out = new PrintStream(new FileOutputStream(path));
 		System.setErr(out);

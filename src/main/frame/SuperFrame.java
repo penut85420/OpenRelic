@@ -27,6 +27,10 @@ public interface SuperFrame {
 			c.setFont(MainFrame.mGlobalFont);
 	};
 	
+	default public String t(String s) {
+		return Lang.t(s);
+	}
+	
 	default public void addObj(JComponent c) {
 		mObjFont.add(c);
 	}

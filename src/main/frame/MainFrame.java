@@ -9,6 +9,7 @@ import javax.swing.plaf.*;
 
 import main.Data.Lang;
 import main.Dialog.AboutDev;
+import main.Dialog.FontChooser.FontChooser;
 import main.Dialog.LangEditor.LangEditor;
 import main.Frame.RelicViewer.RelicViewer;
 import main.Frame.Relicording.Relicording;
@@ -102,7 +103,8 @@ public class MainFrame extends JFrame implements SuperFrame {
 		itemSetting.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new FontSetter(mFrame).setVisible(true);
+				// new FontSetter(mFrame).setVisible(true);
+				new FontChooser(mFrame).showDialog();
 			}
 		});
 		menuSetting.add(itemSetting);
@@ -156,8 +158,6 @@ public class MainFrame extends JFrame implements SuperFrame {
 		for (SuperFrame p: mCtrlCenter)
 			p.refresh();
 	}
-
-	private String t(String key) { return Lang.t(key); }
 
 	public void run() { setVisible(true); }
 
