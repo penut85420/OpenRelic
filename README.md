@@ -15,8 +15,8 @@
   
 ***
 ## 下載區  
-主程式 + 資料: [Release Alpha v1.1.3](https://goo.gl/n5a8NF)  
-只下載資料: [Data U21.1.0](https://goo.gl/DaHV4y)  
+主程式 + 資料: [Release Alpha v1.1.4](https://goo.gl/DRXaLF)  
+只下載資料: [Data U21.6.0](https://goo.gl/TAMNXk)  
   
 ### 如何開啟?  
 需要先安裝 [Java JRE 8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)  
@@ -28,6 +28,16 @@
 
 遺物相關資料與圖示版權歸屬Digital Extremes  
 如有侵權請告知  
+  
+***
+2017/09/14
+改動：
+1. VoidRelic描述遺物代號的部分，紀元跟代號可以接受空格或者Tab分隔
+2. 增加處理Wiki的Vaulted Relic資料，能順便比對現有資料的功能
+  
+資料更新：
+1. 新增遺物資料
+2. 更新入庫遺物資料
   
 ***
 2017/08/02  
