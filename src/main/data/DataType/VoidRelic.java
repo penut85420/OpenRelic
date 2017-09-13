@@ -11,7 +11,7 @@ public class VoidRelic {
 	ArrayList<ItemPart> mDropItemList = new ArrayList<>();
 	
 	public VoidRelic(String str) {
-		String[] s = str.split("\t");
+		String[] s = str.split("[\t ]");
 		mEra = s[0];
 		mCode = s[1];
 	}

@@ -10,7 +10,6 @@ public class OpenRelicMain {
 		setLog();
 		Lang.init();
 		RelicData.init();
-		
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() { new MainFrame().run(); }
 		});
@@ -18,7 +17,9 @@ public class OpenRelicMain {
 	
 	private static void setLog() throws FileNotFoundException {
 		if (new File("debug").exists()) return ;
-		String path = String.format("error%d.log", System.currentTimeMillis());
+		File log = new File("log");
+		log.mkdirs();
+		String path = String.format("log/error%d.log", System.currentTimeMillis());
 		PrintStream out = new PrintStream(new FileOutputStream(path));
 		System.setErr(out);
 	}
