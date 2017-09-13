@@ -717,3 +717,99 @@ Boar PRIME Receiver
 Ankyros PRIME Blade
 Dakra PRIME Blueprint
 RHINO PRIME Blueprint
+
+Axi N4
+Cernos PRIME Upper_Limb
+Galatine PRIME Blade
+NEKROS PRIME Chassis Blueprint
+Fragor PRIME Handle
+HYDROID PRIME Neuroptics Blueprint
+Nikana PRIME Hilt
+
+Axi N5
+Euphona PRIME Blueprint
+Lex PRIME Barrel
+OBERON PRIME Chassis Blueprint
+Helios PRIME Systems
+NEKROS PRIME Neuroptics
+Nami_Skyla PRIME Blade
+
+Axi V6
+Ballistica PRIME Lower_Limb
+Braton PRIME Blueprint
+FORMA Blueprint
+Fang PRIME Handle
+Galatine PRIME Handle
+VALKYR PRIME Chassis Blueprint
+
+Lith B2
+FORMA Blueprint
+Paris PRIME Lower_Limb
+Tigris PRIME Stock
+Braton PRIME Receiver
+Orthos PRIME Blade
+Ballistica PRIME Blueprint
+
+Lith H1
+Bronco PRIME Blueprint
+Paris PRIME Blueprint
+SARYN PRIME Systems Blueprint
+Akstiletto PRIME Barrel
+Nami_Skyla PRIME Handle
+Helios PRIME Cerebrum
+
+Lith T1
+Akbronco PRIME Blueprint
+Burston PRIME Blueprint
+FORMA Blueprint
+Ballistica PRIME Upper_Limb
+VALKYR PRIME Neuroptics Blueprint
+Tigris PRIME Blueprint
+
+Meso C3
+Burston PRIME Stock
+Lex PRIME Blueprint
+Nami_Skyla PRIME Blueprint
+Helios PRIME Blueprint
+SARYN PRIME Blueprint
+Cernos PRIME Lower_Limb
+
+Meso N5
+Braton PRIME Stock
+FORMA Blueprint
+Lex PRIME Receiver
+HYDROID PRIME Blueprint
+Tigris PRIME Receiver
+NEKROS PRIME Systems Blueprint
+
+Neo H1
+Burston PRIME Receiver
+Fragor PRIME Head
+Orthos PRIME Handle
+BANSHEE PRIME Blueprint
+Tigris PRIME Barrel
+HYDROID PRIME Systems Blueprint
+
+Neo S7
+BANSHEE PRIME Neuroptics Blueprint
+Fang PRIME Blade
+Helios PRIME Carapace
+Ballistica PRIME Receiver
+Sybaris PRIME Receiver
+Silva & Aegis PRIME Guard
+
+Neo S8
+Bronco PRIME Receiver
+FORMA Blueprint
+HYDROID PRIME Chassis Blueprint
+Fragor PRIME Blueprint
+Nikana PRIME Blueprint
+Spira PRIME Pouch
+
+Meso G1
+FORMA Blueprint
+Venka PRIME Blades
+Braton PRIME Barrel
+Ballistica PRIME String
+Silva & Aegis PRIME Blade
+Galatine PRIME Blueprint
