@@ -50,4 +50,13 @@ public class Lang {
 			return key;
 		return mLang.get(Lang).get(key);
 	}
+	
+	public static String tt(String key, int space) {
+		String s = "";
+		for (int i = 0; i < space; i++) s += "&nbsp;";
+		s += t(key);
+		for (int i = 0; i < space; i++) s += "&nbsp";
+		
+		return s;
+	}
 }

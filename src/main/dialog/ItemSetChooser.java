@@ -35,6 +35,7 @@ public class ItemSetChooser extends JDialog {
 	private void init() {
 		setTitle(Lang.t("itemset-chooser"));
 		setSize(250, 400);
+		setLocationRelativeTo(null);
 		setModal(true);
 		getContentPane().setLayout(new BorderLayout());
 	}

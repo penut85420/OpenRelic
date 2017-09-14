@@ -7,6 +7,7 @@ import java.util.*;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 
+import main.Data.ColorManager;
 import main.Data.Lang;
 import main.Data.RelicData;
 import main.Data.DataType.ItemSet;
@@ -29,6 +30,7 @@ public class Relicording extends JPanel implements SuperFrame {
 	JButton mDelete;
 	JCheckBox mShowVaulted;
 	JLabel t1;
+	JLabel t2;
 	
 	public Relicording() {
 		init();
@@ -56,10 +58,16 @@ public class Relicording extends JPanel implements SuperFrame {
 		mDelete = new JButton(Lang.t("delete"));
 		mShowVaulted = new JCheckBox(Lang.t("show-vaulted"));
 		t1 = new JLabel(Lang.t("target-itemset"));
+		t2 = new JLabel("<html>"
+			+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Common", 1), ColorManager.CommonFG, ColorManager.CommonBG) + "  "
+			+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Uncommon", 1), ColorManager.UncommonFG, ColorManager.UncommonBG) + "  "
+			+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Rare", 1), ColorManager.RareFG, ColorManager.RareBG) + "  "
+			+ "</html>");
 		JScrollPane spItemList = new JScrollPane(mWishList);
 		JScrollPane spRelicording = new JScrollPane(mRelicording);
 		
 		t1.setBorder(new EmptyBorder(5, 5, 0, 0));
+		t2.setBorder(new EmptyBorder(5, 5, 0, 0));
 		mShowVaulted.setBorder(new EmptyBorder(2, 0, 0, 10));
 		
 		mRelicording.getColumnModel().getColumn(0).setMaxWidth(50);
@@ -77,6 +85,7 @@ public class Relicording extends JPanel implements SuperFrame {
 		
 		JPanel pRight = new JPanel(new BorderLayout());
 			JPanel pRightTop = new JPanel(new BorderLayout());
+			pRightTop.add(t2, BorderLayout.WEST);
 			pRightTop.add(mShowVaulted, BorderLayout.EAST);
 		pRight.add(pRightTop, BorderLayout.NORTH);
 		pRight.add(spRelicording, BorderLayout.CENTER);
@@ -175,6 +184,11 @@ public class Relicording extends JPanel implements SuperFrame {
 		for (int i = 0; i < mRelicordingTableModel.getColumnCount(); i++)
 			mRelicording.getColumnModel().getColumn(i)
 				.setHeaderValue(mRelicordingTableModel.getColumnName(i));
+		t2.setText("<html>"
+				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Common", 1), ColorManager.CommonFG, ColorManager.CommonBG) + "  "
+				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Uncommon", 1), ColorManager.UncommonFG, ColorManager.UncommonBG) + "  "
+				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Rare", 1), ColorManager.RareFG, ColorManager.RareBG) + "  "
+				+ "</html>");
 	}
 	
 	public void writeState() {
