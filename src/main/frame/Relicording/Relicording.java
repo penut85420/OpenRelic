@@ -6,14 +6,16 @@ import java.util.*;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-
+import main.Custom.Listener.MouseSmoothClickListener;
 import main.Data.ColorManager;
 import main.Data.Lang;
 import main.Data.RelicData;
 import main.Data.DataType.ItemSet;
 import main.Dialog.ItemSetChooser;
+import main.Frame.MainFrame;
 import main.Frame.SuperFrame;
 import main.Library.LibraryIO;
+import main.Library.LibrarySugar;
 
 public class Relicording extends JPanel implements SuperFrame {
 	
@@ -70,7 +72,8 @@ public class Relicording extends JPanel implements SuperFrame {
 		t2.setBorder(new EmptyBorder(5, 5, 0, 0));
 		mShowVaulted.setBorder(new EmptyBorder(2, 0, 0, 10));
 		
-		mRelicording.getColumnModel().getColumn(0).setMaxWidth(50);
+		setTableHeaderWidth();
+		LibrarySugar.setTableHeaderAlignment(mRelicording, JLabel.CENTER);
 		mRelicording.getTableHeader().setReorderingAllowed(false);
 		mRelicording.getColumnModel().getColumn(0).setCellRenderer(new RelicordingTableRenderer());
 		
@@ -94,6 +97,11 @@ public class Relicording extends JPanel implements SuperFrame {
 		add(pRight, BorderLayout.CENTER);
 	}
 	
+	private void setTableHeaderWidth() {
+		mRelicording.getColumnModel().getColumn(0).setMaxWidth(MainFrame.mGlobalFont.getSize() * 5);
+		mRelicording.getColumnModel().getColumn(0).setMinWidth(MainFrame.mGlobalFont.getSize() * 5);
+	}
+
 	private void initEvent() {
 		mChoose.addActionListener(new ActionListener() {
 			
@@ -128,23 +136,10 @@ public class Relicording extends JPanel implements SuperFrame {
 			}
 		});
 		
-		mWishList.addMouseListener(new MouseListener() {
+		mWishList.addMouseListener(new MouseSmoothClickListener() {
 			
 			@Override
-			public void mouseClicked(MouseEvent e) {
-				setDisplayItem();
-			}
-
-			public void mouseEntered(MouseEvent e) { }
-			public void mouseExited(MouseEvent e) { }
-			
-			public void mousePressed(MouseEvent e) { 
-				setDisplayItem();
-			}
-			
-			public void mouseReleased(MouseEvent e) {
-				setDisplayItem();
-			}
+			public void mouseClicked(MouseEvent e) { setDisplayItem(); }
 		});
 		
 		mShowVaulted.addActionListener(new ActionListener() {
@@ -185,6 +180,7 @@ public class Relicording extends JPanel implements SuperFrame {
 		for (int i = 0; i < mRelicordingTableModel.getColumnCount(); i++)
 			mRelicording.getColumnModel().getColumn(i)
 				.setHeaderValue(mRelicordingTableModel.getColumnName(i));
+		setTableHeaderWidth();
 		t2.setText("<html>"
 				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Common", 1), ColorManager.CommonFG, ColorManager.CommonBG) + "  "
 				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Uncommon", 1), ColorManager.UncommonFG, ColorManager.UncommonBG) + "  "

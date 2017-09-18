@@ -12,6 +12,7 @@ import java.util.*;
 
 import main.Data.Lang;
 import main.Frame.*;
+import main.Library.LibrarySugar;
 
 public class RelicViewer extends JPanel implements SuperFrame {
 	private static final long serialVersionUID = 1L;
@@ -50,13 +51,14 @@ public class RelicViewer extends JPanel implements SuperFrame {
 		
 		// Set init state
 		mInstantUpdate.setSelected(true);
-		mDisplayForma.setSelected(true);
-		mDisplayVaulted.setSelected(true);
+		mDisplayForma.setSelected(false);
+		mDisplayVaulted.setSelected(false);
 		
 		// Init table
 		mRelicViewerTableModel = new RelicViewerTableModel();
 		mRelicTable = new JTable(mRelicViewerTableModel);
 		mSorter = new TableRowSorter<RelicViewerTableModel>(mRelicViewerTableModel);
+		LibrarySugar.setTableHeaderAlignment(mRelicTable, JLabel.CENTER);
 		JScrollPane spRelicTable = new JScrollPane(mRelicTable);
 		
 		// Set margin

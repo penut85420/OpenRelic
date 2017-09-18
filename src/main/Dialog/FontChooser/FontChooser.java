@@ -9,7 +9,7 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
 
-import main.Custom.Listener.MouseClickListener;
+import main.Custom.Listener.MouseSmoothClickListener;
 import main.Data.Lang;
 import static main.Library.LibrarySugar.log;
 
@@ -114,27 +114,27 @@ public class FontChooser extends JDialog {
 	}
 	
 	private void initEvent() {
-		mFontList.addMouseListener(new MouseClickListener() {
+		mFontList.addMouseListener(new MouseSmoothClickListener() {
 			@Override
-			public void mouseClick(MouseEvent e) {
+			public void mouseClicked(MouseEvent e) {
 				String fontname = mFontList.getSelectedValue();
 				mSearchFont.setText(fontname);
 				setExFont(fontname);
 			}
 		});
 		
-		mStyleList.addMouseListener(new MouseClickListener() {
+		mStyleList.addMouseListener(new MouseSmoothClickListener() {
 			@Override
-			public void mouseClick(MouseEvent e) {
+			public void mouseClicked(MouseEvent e) {
 				FontStyle fontstyle = mStyleList.getSelectedValue();
 				mSearchStyle.setText(fontstyle.toString());
 				setExFont(fontstyle);
 			}
 		});
 		
-		mSizeList.addMouseListener(new MouseClickListener() {
+		mSizeList.addMouseListener(new MouseSmoothClickListener() {
 			@Override
-			public void mouseClick(MouseEvent e) {
+			public void mouseClicked(MouseEvent e) {
 				Integer size = mSizeList.getSelectedValue();
 				mSearchSize.setText(String.valueOf(size));
 				setExFont(size);
