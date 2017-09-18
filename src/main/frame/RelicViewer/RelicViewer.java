@@ -97,26 +97,33 @@ public class RelicViewer extends JPanel implements SuperFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) { search(); }
 		}
+		
 		mSearchField.addActionListener(new Search());
+		
 		mSearchField.addCaretListener(new CaretListener() {
 			@Override
 			public void caretUpdate(CaretEvent e) { ifInstantThenUpdate(); }
 		});
+		
 		mSearchButton.addActionListener(new Search());
+		
 		mClearButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) { mSearchField.setText(""); }
 		});
+		
 		mInstantUpdate.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) { ifInstantThenUpdate(); }
 		});
+		
 		mDisplayForma.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				mRelicViewerTableModel.setFormaDisplay(mDisplayForma.isSelected());
 			}
 		});
+		
 		mDisplayVaulted.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {

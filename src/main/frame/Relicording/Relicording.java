@@ -60,11 +60,7 @@ public class Relicording extends JPanel implements SuperFrame {
 		mDelete = new JButton(Lang.t("delete"));
 		mShowVaulted = new JCheckBox(Lang.t("show-vaulted"));
 		t1 = new JLabel(Lang.t("target-itemset"));
-		t2 = new JLabel("<html>"
-			+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Common", 1), ColorManager.CommonFG, ColorManager.CommonBG) + "  "
-			+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Uncommon", 1), ColorManager.UncommonFG, ColorManager.UncommonBG) + "  "
-			+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Rare", 1), ColorManager.RareFG, ColorManager.RareBG) + "  "
-			+ "</html>");
+		setLabel();
 		JScrollPane spItemList = new JScrollPane(mWishList);
 		JScrollPane spRelicording = new JScrollPane(mRelicording);
 		
@@ -101,10 +97,17 @@ public class Relicording extends JPanel implements SuperFrame {
 		mRelicording.getColumnModel().getColumn(0).setMaxWidth(MainFrame.mGlobalFont.getSize() * 5);
 		mRelicording.getColumnModel().getColumn(0).setMinWidth(MainFrame.mGlobalFont.getSize() * 5);
 	}
+	
+	private void setLabel() {
+		t2 = new JLabel("<html>"
+				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Common", 1), ColorManager.CommonFG, ColorManager.CommonBG) + "  "
+				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Uncommon", 1), ColorManager.UncommonFG, ColorManager.UncommonBG) + "  "
+				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Rare", 1), ColorManager.RareFG, ColorManager.RareBG) + "  "
+				+ "</html>");
+	}
 
 	private void initEvent() {
 		mChoose.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				ItemSetChooser isc = new ItemSetChooser();
@@ -127,7 +130,6 @@ public class Relicording extends JPanel implements SuperFrame {
 		});
 		
 		mDelete.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				mWishListModel.removeItem(mWishList.getSelectedIndices());
@@ -137,13 +139,11 @@ public class Relicording extends JPanel implements SuperFrame {
 		});
 		
 		mWishList.addMouseListener(new MouseSmoothClickListener() {
-			
 			@Override
 			public void mouseClicked(MouseEvent e) { setDisplayItem(); }
 		});
 		
 		mShowVaulted.addActionListener(new ActionListener() {
-			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				mRelicordingTableModel.setVaultedDisplay(mShowVaulted.isSelected());
@@ -181,11 +181,7 @@ public class Relicording extends JPanel implements SuperFrame {
 			mRelicording.getColumnModel().getColumn(i)
 				.setHeaderValue(mRelicordingTableModel.getColumnName(i));
 		setTableHeaderWidth();
-		t2.setText("<html>"
-				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Common", 1), ColorManager.CommonFG, ColorManager.CommonBG) + "  "
-				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Uncommon", 1), ColorManager.UncommonFG, ColorManager.UncommonBG) + "  "
-				+ ColorManager.getForeBackgroundTaggedText(Lang.tt("Rare", 1), ColorManager.RareFG, ColorManager.RareBG) + "  "
-				+ "</html>");
+		setLabel();
 	}
 	
 	public void writeState() {

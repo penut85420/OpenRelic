@@ -39,6 +39,16 @@ public class VoidRelic {
 		return null;
 	}
 	
+	public int getRarityValue(ItemPart item) {
+		for (int i = 0; i < mDropItemList.size(); i++) {
+			if (mDropItemList.get(i).equals(item))
+				if (i < 3) return 0;
+				else if (i < 5) return 1;
+				else return 2;
+		}
+		return 3;
+	}
+	
 	public String toString() {
 		String str = String.format("Era: %s, Code: %s\n", mEra, mCode);
 		for (ItemPart item: mDropItemList)

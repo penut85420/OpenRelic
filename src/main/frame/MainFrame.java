@@ -99,8 +99,6 @@ public class MainFrame extends JFrame implements SuperFrame {
 		itemSetting.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// Old Style Fontsetter
-				// new FontSetter(mFrame).setVisible(true);
 				FontChooser fc = new FontChooser(mFrame);
 				fc.setFont(mGlobalFont);
 				fc.showDialog();
@@ -121,16 +119,15 @@ public class MainFrame extends JFrame implements SuperFrame {
 					refreshAll();
 				}
 			});
+			addObj(item);
 			menuLang.add(item);
 		}
 
 		JMenuItem itemLangEditor = new JMenuItem(t("lang-editor"));
-		
 		 
 //		TODO: Temporarily disable in release version
 //		menuLang.add(new JMenuBar());
 //		menuLang.add(itemLangEditor);
-		 
 		
 		itemLangEditor.addActionListener(new ActionListener() {
 			
@@ -154,6 +151,13 @@ public class MainFrame extends JFrame implements SuperFrame {
 		bar.add(menuLang);
 		bar.add(menuAbout);
 		setJMenuBar(bar);
+		
+		addObj(menuSetting);
+		addObj(itemSetting);
+		addObj(menuLang);
+		addObj(itemLangEditor);
+		addObj(menuAbout);
+		addObj(itemAboutDev);
 	}
 	
 	public void refreshAll() {
