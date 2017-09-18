@@ -176,6 +176,7 @@ public class Relicording extends JPanel implements SuperFrame {
 		
 		addObj(mWishList);
 		addObj(mRelicording);
+		addObj(mRelicording.getTableHeader());
 	}
 
 	@Override

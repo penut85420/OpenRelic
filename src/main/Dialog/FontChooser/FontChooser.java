@@ -1,6 +1,8 @@
 package main.Dialog.FontChooser;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 
 import javax.swing.*;
@@ -9,6 +11,7 @@ import javax.swing.border.TitledBorder;
 
 import main.Custom.Listener.MouseClickListener;
 import main.Data.Lang;
+import static main.Library.LibrarySugar.log;
 
 public class FontChooser extends JDialog {
 	
@@ -27,7 +30,8 @@ public class FontChooser extends JDialog {
 	
 	TitledBorder mExampleBorder;
 	
-	Font mFont;
+	Font mUserFont;
+	final static Font DEFAULT_FONT = new Font("細明體", Font.PLAIN, 12);
 	
 	public FontChooser(Window window) {
 		super(window);
@@ -43,7 +47,7 @@ public class FontChooser extends JDialog {
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(new GridLayout(2, 0));
-		mFont = new Font("細明體", Font.BOLD + Font.ITALIC, 12);
+		mUserFont = DEFAULT_FONT;
 	}
 	
 	private void initGUI() {
@@ -136,6 +140,22 @@ public class FontChooser extends JDialog {
 				setExFont(size);
 			}
 		});
+		
+		mCheck.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+			}
+		});
+		
+		mCancel.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				mUserFont = null;
+				setVisible(false);
+			}
+		});
 	}
 	
 	private String[] getFontList() {
@@ -167,37 +187,51 @@ public class FontChooser extends JDialog {
 	}
 	
 	private void setExFont(int size) {
-		setExFont(new Font(mFont.getName(), mFont.getStyle(), size));
+		setExFont(new Font(mUserFont.getName(), mUserFont.getStyle(), size));
 	}
 	
 	private void setExFont(FontStyle style) {
-		setExFont(new Font(mFont.getName(), style.getStyle(), mFont.getSize()));
+		setExFont(new Font(mUserFont.getName(), style.getStyle(), mUserFont.getSize()));
 	}
 	
 	private void setExFont(String font) {
-		setExFont(new Font(font, mFont.getStyle(), mFont.getSize()));
+		setExFont(new Font(font, mUserFont.getStyle(), mUserFont.getSize()));
 	}
 	
 	private void setExFont(Font font) {
-		mFont = font;
-		tExample.setFont(mFont);
+		mUserFont = font;
+		tExample.setFont(mUserFont);
+	}
+	
+	public Font getUserFont() {
+		return mUserFont;
 	}
 	
 	public void showDialog() {
+		mSearchFont.setText(mUserFont.getName());
+		mSearchStyle.setText(getStyleList()[mUserFont.getStyle()].toString());
+		mSearchSize.setText(String.valueOf(mUserFont.getSize()));
+		
+		mFontList.setSelectedValue(mUserFont.getName(), true);
+		mStyleList.setSelectedIndex(mUserFont.getStyle());
+		mSizeList.setSelectedValue(mUserFont.getSize(), true);
+		
 		setVisible(true);
 	}
 
 	private String t(String key) { return Lang.t(key); }
 	
 	public static void main(String[] args) {
-		Font f = new Font("細明體", Font.BOLD + Font.ITALIC, 12);
-		System.out.println(f.getFamily());
 		Lang.init();
 		SwingUtilities.invokeLater(new Runnable() {
 			
 			@Override
 			public void run() {
-				new FontChooser(null).showDialog();
+				FontChooser fc = new FontChooser(null);
+				fc.setExFont(DEFAULT_FONT);
+				fc.showDialog();
+				if (fc.getUserFont() != null)
+					log(fc.getUserFont());
 			}
 		});
 	}
@@ -211,12 +245,17 @@ public class FontChooser extends JDialog {
 			mStyleCode = code;
 		}
 		
+		public FontStyle(int code) {
+			mStyleName = getStyleList()[code].toString();
+			mStyleCode = code;
+		}
+		
 		public String toString() { return mStyleName; }
 		public int getStyle() { return mStyleCode; }
 	}
 	
-	/*
-	 * How To Get System Font List:
+	/* *
+	 *   How To Get System Font List:
 	 * 		import java.awt.GraphicsEnvironment;
 	 * 		String[] fontList
 	 * 			 = GraphicsEnvironment

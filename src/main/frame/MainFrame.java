@@ -7,6 +7,7 @@ import java.util.*;
 import javax.swing.*;
 import javax.swing.plaf.*;
 
+import main.Custom.Listener.WindowClosingListener;
 import main.Data.Lang;
 import main.Dialog.AboutDev;
 import main.Dialog.FontChooser.FontChooser;
@@ -34,6 +35,11 @@ public class MainFrame extends JFrame implements SuperFrame {
 		initGUI();
 		initEvent();
 		initCtrl();
+		initObjectArr();
+	}
+	
+	private void initObjectArr() {
+		addObj(mTabbedPane);
 	}
 
 	private void initCtrl() {
@@ -79,19 +85,9 @@ public class MainFrame extends JFrame implements SuperFrame {
 	}
 	
 	private void initEvent() {
-		mFrame.addWindowListener(new WindowListener() {
-
+		mFrame.addWindowListener(new WindowClosingListener() {
 			@Override
-			public void windowClosing(WindowEvent e) {
-				onClose();
-			}
-			
-			public void windowActivated(WindowEvent e) { }
-			public void windowClosed(WindowEvent e) { }
-			public void windowDeactivated(WindowEvent e) { }
-			public void windowDeiconified(WindowEvent e) { }
-			public void windowIconified(WindowEvent e) { }
-			public void windowOpened(WindowEvent e) { }
+			public void windowClosing(WindowEvent e) { onClose(); }
 		});
 	}
 	
@@ -103,8 +99,14 @@ public class MainFrame extends JFrame implements SuperFrame {
 		itemSetting.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				// Old Style Fontsetter
 				// new FontSetter(mFrame).setVisible(true);
-				new FontChooser(mFrame).showDialog();
+				FontChooser fc = new FontChooser(mFrame);
+				fc.setFont(mGlobalFont);
+				fc.showDialog();
+				if (fc.getUserFont() != null)
+					mGlobalFont = fc.getUserFont();
+				refreshAll();
 			}
 		});
 		menuSetting.add(itemSetting);

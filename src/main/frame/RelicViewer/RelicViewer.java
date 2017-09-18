@@ -142,6 +142,7 @@ public class RelicViewer extends JPanel implements SuperFrame {
 		
 		addObj(mSearchField);
 		addObj(mRelicTable);
+		addObj(mRelicTable.getTableHeader());
 	}
 
 	@Override
