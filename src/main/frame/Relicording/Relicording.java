@@ -16,6 +16,7 @@ import main.Frame.MainFrame;
 import main.Frame.SuperFrame;
 import main.Library.LibraryIO;
 import main.Library.LibrarySugar;
+import main.StateRecorder.StateManager;
 
 public class Relicording extends JPanel implements SuperFrame {
 	
@@ -193,6 +194,7 @@ public class Relicording extends JPanel implements SuperFrame {
 				content += b.toString() + "\t";
 			content += "\n";
 		}
+		StateManager.writeState(content, StateManager.RelicordingItemHash);
 		LibraryIO.writeFile(STATE_PATH, content);
 		mWishListModel.writeState();
 	}

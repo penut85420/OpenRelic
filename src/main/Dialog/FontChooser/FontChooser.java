@@ -11,10 +11,11 @@ import javax.swing.border.TitledBorder;
 
 import main.Custom.Listener.MouseSmoothClickListener;
 import main.Data.Lang;
+import main.Frame.SuperFrame;
+
 import static main.Library.LibrarySugar.log;
 
-public class FontChooser extends JDialog {
-	
+public class FontChooser extends JDialog implements SuperFrame {
 	JLabel t1;
 	JLabel t2;
 	JLabel t3;
@@ -38,6 +39,23 @@ public class FontChooser extends JDialog {
 		init();
 		initGUI();
 		initEvent();
+		initObjectArray();
+	}
+
+	private void initObjectArray() {
+		addObj(t1, "font");
+		addObj(t2, "font-style");
+		addObj(t3, "font-size");
+		addObj(tExample, "example-text");
+		addObj(mCheck, "check");
+		addObj(mCancel, "cancel");
+		
+		addObj(mSearchFont);
+		addObj(mSearchStyle);
+		addObj(mSearchSize);
+		addObj(mFontList);
+		addObj(mStyleList);
+		addObj(mSizeList);
 	}
 
 	private void init() {
@@ -47,7 +65,6 @@ public class FontChooser extends JDialog {
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		getContentPane().setLayout(new GridLayout(2, 0));
-		mUserFont = DEFAULT_FONT;
 	}
 	
 	private void initGUI() {
@@ -66,7 +83,7 @@ public class FontChooser extends JDialog {
 		mSizeList = new JList<>(getSizeList());
 		
 		mExampleBorder = new TitledBorder(t("example"));
-		
+
 		tExample.setBorder(mExampleBorder);
 		tExample.setHorizontalAlignment(JLabel.CENTER);
 		
@@ -156,6 +173,8 @@ public class FontChooser extends JDialog {
 				setVisible(false);
 			}
 		});
+		
+		// TODO mSearchFont要增加搜尋功能
 	}
 	
 	private String[] getFontList() {
@@ -207,6 +226,10 @@ public class FontChooser extends JDialog {
 		return mUserFont;
 	}
 	
+	public void setUserFont(Font font) {
+		mUserFont = font;
+	}
+	
 	public void showDialog() {
 		mSearchFont.setText(mUserFont.getName());
 		mSearchStyle.setText(getStyleList()[mUserFont.getStyle()].toString());
@@ -218,8 +241,6 @@ public class FontChooser extends JDialog {
 		
 		setVisible(true);
 	}
-
-	private String t(String key) { return Lang.t(key); }
 	
 	public static void main(String[] args) {
 		Lang.init();
@@ -228,7 +249,7 @@ public class FontChooser extends JDialog {
 			@Override
 			public void run() {
 				FontChooser fc = new FontChooser(null);
-				fc.setExFont(DEFAULT_FONT);
+				fc.setExFont(new Font("細明體", Font.BOLD, 12));
 				fc.showDialog();
 				if (fc.getUserFont() != null)
 					log(fc.getUserFont());
@@ -252,6 +273,17 @@ public class FontChooser extends JDialog {
 		
 		public String toString() { return mStyleName; }
 		public int getStyle() { return mStyleCode; }
+	}
+
+	@Override
+	public void refresh() {
+		refreshDefault();
+		mExampleBorder.setTitle(t("example"));
+	}
+
+	@Override
+	public void onClose() {
+		// TODO 紀錄使用者最後選擇的字型
 	}
 	
 	/* *

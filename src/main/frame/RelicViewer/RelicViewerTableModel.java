@@ -13,8 +13,8 @@ public class RelicViewerTableModel extends AbstractTableModel {
 	String[] mColsName = {Lang.t("relic-name"), Lang.t("item-name"), Lang.t("rarity")};
 	String mFilter;
 	
-	Boolean isDisplayForma = true;
-	Boolean isDisplayVaulted = true;
+	Boolean isDisplayForma = false;
+	Boolean isDisplayVaulted = false;
 	
 	ArrayList<String> mRelic = new ArrayList<>();
 	ArrayList<String> mItemName = new ArrayList<>();

@@ -100,10 +100,11 @@ public class MainFrame extends JFrame implements SuperFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				FontChooser fc = new FontChooser(mFrame);
-				fc.setFont(mGlobalFont);
+				fc.setUserFont(mGlobalFont);
 				fc.showDialog();
 				if (fc.getUserFont() != null)
 					mGlobalFont = fc.getUserFont();
+				fc.dispose();
 				refreshAll();
 			}
 		});
