@@ -4,16 +4,17 @@ import javax.swing.*;
 import static main.Library.LibrarySugar.log;
 import main.Library.LibraryIO;
 
+@SuppressWarnings("unused")
 public class StateManager {
 	public static final String DEFAULT_USER_FOLDER = getDefaultUserDocumentDirectory();
-	public static final String OPENRELIC_FOLDER = "/OpenRelic/";
+	public static final String OPENRELIC_FOLDER = "\\OpenRelic\\";
 	
 	public static final int MainFrameState = 0;
 	public static final int RelicViewerState = 1;
 	public static final int RelicordingItemHash = 2;
 	public static final int RelicordingWishList = 3;
 	
-	private static final String[] StateFolder = {
+	private static final String[] StateFile = {
 		"MainFrameState.dat",
 		"RelicViewerState.dat",
 		"RelicordingItemHash.dat",
@@ -21,8 +22,18 @@ public class StateManager {
 	};
 	
 	public static void writeState(String content, int code) {
-		log(DEFAULT_USER_FOLDER + StateFolder[code]);
-		LibraryIO.writeFile(DEFAULT_USER_FOLDER + StateFolder[code], content);
+		LibraryIO.writeFile(getStateFile(code), content);
+	}
+	
+	public static String[] loadState(int code) {
+		String raw = LibraryIO.readFile(getStateFile(code));
+		if (raw == null || raw.isEmpty()) return new String[0];
+		
+		return raw.replaceAll("\r", "").split("\n");
+	}
+	
+	public static String getStateFile(int code) {
+		return DEFAULT_USER_FOLDER + StateFile[code];
 	}
 	
 	public static String getDefaultUserDocumentDirectory() {

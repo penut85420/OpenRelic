@@ -14,8 +14,7 @@ import main.Data.DataType.ItemSet;
 import main.Dialog.ItemSetChooser;
 import main.Frame.MainFrame;
 import main.Frame.SuperFrame;
-import main.Library.LibraryIO;
-import main.Library.LibrarySugar;
+import main.Library.*;
 import main.StateRecorder.StateManager;
 
 public class Relicording extends JPanel implements SuperFrame {
@@ -41,6 +40,7 @@ public class Relicording extends JPanel implements SuperFrame {
 		initEvent();
 		initObjectArr();
 		loadState();
+		mWishListModel.loadState();
 	}
 	
 	public ArrayList<Boolean> getItemCheck(ItemSet i) {
@@ -195,15 +195,10 @@ public class Relicording extends JPanel implements SuperFrame {
 			content += "\n";
 		}
 		StateManager.writeState(content, StateManager.RelicordingItemHash);
-		LibraryIO.writeFile(STATE_PATH, content);
-		mWishListModel.writeState();
 	}
 	
 	public void loadState() {
-		String raw = LibraryIO.readFile(STATE_PATH);
-		if (raw == null || raw.isEmpty()) return ;
-		
-		String[] content = raw.split("\n");
+		String[] content = StateManager.loadState(StateManager.RelicordingItemHash);
 		
 		for (String line: content) {
 			String[] seg = line.split("\t");
@@ -212,12 +207,11 @@ public class Relicording extends JPanel implements SuperFrame {
 				b.add(Boolean.valueOf(seg[i]));
 			mItemCheck.put(RelicData.mItemSet.get(seg[0]), b);
 		}
-		
-		mWishListModel.loadState();
 	}
 
 	@Override
 	public void onClose() {
 		writeState();
+		mWishListModel.writeState();
 	}
 }

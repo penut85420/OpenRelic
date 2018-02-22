@@ -6,11 +6,9 @@ import javax.swing.*;
 
 import main.Data.RelicData;
 import main.Data.DataType.ItemSet;
-import main.Library.LibraryIO;
+import main.StateRecorder.StateManager;
 
-public class WishListModel extends AbstractListModel<String> {
-	public static final String WISHLIST_PATH = "user/wlist.dat";
-	
+public class WishListModel extends AbstractListModel<String> {	
 	ArrayList<ItemSet> mWishList;
 	
 	public WishListModel() { 
@@ -21,14 +19,12 @@ public class WishListModel extends AbstractListModel<String> {
 		String content = "";
 		for (ItemSet i: mWishList)
 			content += i.getKeyName() + "\n";
-		LibraryIO.writeFile(WISHLIST_PATH, content);
+		StateManager.writeState(content, StateManager.RelicordingWishList);
 	}
 	
 	public void loadState() {
-		String raw = LibraryIO.readFile(WISHLIST_PATH);
-		if (raw == null || raw.isEmpty()) return ;
+		String[] content = StateManager.loadState(StateManager.RelicordingWishList);
 		
-		String[] content = raw.split("\n");
 		for (String s: content) {
 			ItemSet i = RelicData.mItemSet.get(s);
 			if (i != null)
